@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Free sky</title>
+    <meta charset="utf-8" /> 
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>    
+</head>
+<body>
+<!-- start wrap -->
+<div class="wrap">
+    <!-- start header -->
+    <div id="header">
+        <a id="logo" href="#"></a>
+        <div id="log-out">Konstantin Sidorov<a href="#">Выйти</a></div>
+        <div class="clear"></div>
+    </div>
+    <!-- end header -->
+        
+    <!-- start content -->
+    <div id="content">
+        <!-- start search -->
+        <div id="search" class="block">
+            <ul>
+                <li>
+                    <span>1.</span>
+                    <!-- start direction -->
+                    <div class="direction">
+                        <div><b>Moscow</b>, Russia<span>mow</span></div>
+                        <div><b>Belin</b>, Germany<span>ber</span></div>
+                        <div class="direction-date">2012-10-18</div>
+                    </div>
+                    <!-- end direction -->
+                    <a href="#" class="check"></a>
+                    <!-- start options -->
+                    <div class="options">
+                        <span>класс</span>
+                        <a href="#">y<span></span><span></span></a>
+                        <a href="#" class="active">b<span></span><span></span></a>
+                        <a href="#" class="active">f<span></span><span></span></a>                        
+                    </div>
+                    <!-- end options --> 
+                    <a href="#" class="close"></a>
+                </li>  
+                <li>
+                     <span>2.</span>
+                    <!-- start direction -->
+                    <div class="direction">
+                        <div><b>Moscow</b>, Russia<span>mow</span></div>
+                        <div><b>Belin</b>, Germany<span>ber</span></div>
+                        <div class="direction-date">2012-10-10</div>
+                    </div>
+                    <!-- end direction -->
+                     <a href="#" class="check"></a>
+                    <!-- start options -->
+                    <div class="options">
+                        <span>класс</span>
+                        <a href="#" class="active">y<span></span><span></span></a>
+                        <a href="#">b<span></span><span></span></a>
+                        <a href="#" class="active">f<span></span><span></span></a>                        
+                    </div>
+                    <!-- end options --> 
+                    <a href="#" class="close"></a> 
+                    <a href="#"  class="search-add">добавить<span></span><span></span></a>
+                </li>  
+            </ul>
+            
+            <!-- start currency -->
+            <div>
+                <div>
+                    <span>рсс</span>
+                    <a href="#" class="button active">Выбрать автоматически<span></span><span></span></a>
+                    <a href="#" class="button">Указать вручную<span></span><span></span></a>     
+                </div>
+                <div class="second">
+                    <span>валюта</span>
+                    <a href="#" class="button">rub<span></span><span></span></a>
+                    <a href="#" class="button active">eur<span></span><span></span></a>
+                    <a href="#" class="button active">usd<span></span><span></span></a>
+                    <a href="#" class="button active">uan<span></span><span></span></a> 
+                </div>
+                <div class="last">
+                    <span>кеш</span>
+                    <a href="#" class="button">Вкл<span></span><span></span></a>
+                    <a href="#" class="button active">Выкл<span></span><span></span></a>
+                </div>
+                <a href="#" class="search-add active">искать<span></span><span></span></a>
+            </div>
+            <!-- end currency -->    
+        </div>
+        <!-- end search -->
+        
+        <!-- start main -->
+        <div id="main" class="block">
+            <!-- start tabs -->
+            <ul id="tabs">
+                <li>
+                    <a href="#" class="active"><b>mow <u></u> ber</b>18/10/12<span></span><span></span></a>
+                    <span class="tab-close"></span>
+                </li>
+                <li>
+                    <a href="#"><b>mow <u></u> ber</b>18/10/12<span></span><span></span></a>
+                    <span class="tab-close"></span>
+                </li>
+            </ul>
+            <!-- end tabs -->
+            
+            <!-- start filters -->
+            <div id="filters">
+                <h2>Настройки показа</h2>
+                <ul>
+                    <li><label><input type="radio" name="filter"/><span></span><b>6d4g</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>6d4g</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>6d4g</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>6lg2</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>6lg2</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>39kn</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>39kn</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>eg4</b>Любые рейсы</label></li>
+                    <li><label><input type="radio" name="filter"/><span></span><b>eg4</b>Любые рейсы</label></li>
+                </ul>
+                <div><label><input type="radio" name="filter"/><span></span>Показать лучшие тарифы</label></div>
+            </div>
+            <!-- end filters -->
+            
+            <!-- start result -->
+            <div id="result">            
+                <!-- start result headings -->
+                <h3 class="h-flight">Рейсы</h3>
+                <h3 class="h-airport">Аэропорты</h3>
+                <h3 class="h-departure">Вылет</h3>
+                <h3 class="h-duration">В пути</h3>
+                <h3 class="h-arrival">Прилет</h3>
+                <h3 class="h-number">Номер</h3>
+                <h3 class="h-class">Класс</h3>
+                <h3 class="h-board">Борт</h3>
+                <h3 class="h-price">Цена, rub</h3>
+                <!-- end result headings -->
+                
+                <!-- start result body --> 
+                <div>
+                    <div class="result-row">
+                        <div class="flight"><h4><b>b2</b>39kn</h4>Любые рейсы</div>                    
+                        <ul>
+                            <li>
+                                <div class="flight-city">mow<u></u>ber</div>
+                                <table>
+                                    <tr>
+                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="departure">10:15</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">10:35</td>
+                                        <td class="number">1983</td>
+                                        <td class="class">t</td>
+                                        <td class="board">733</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="airport"><span>2.</span>msq<u></u>sfx</td>
+                                        <td class="departure">12:55</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">13:45</td>
+                                        <td class="number">891</td>
+                                        <td class="class">t</td>
+                                        <td class="board">trj</td>
+                                    </tr>
+                                     <tr>
+                                        <td class="airport"><span>3.</span>msq<u></u>sfx</td>
+                                        <td class="departure">12:55</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">13:45</td>
+                                        <td class="number">891</td>
+                                        <td class="class">t</td>
+                                        <td class="board">trj</td>
+                                    </tr>
+                                </table>                             
+                                <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
+                            </li>
+                            <li>
+                                <div class="flight-city">ber<u></u>mow</div>
+                                <table>
+                                    <tr>
+                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="departure">13:45</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">22:35</td>
+                                        <td class="number">1983</td>
+                                        <td class="class">w</td>
+                                        <td class="board">733</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="airport"><span>2.</span>sfx<u></u>msq</td>
+                                        <td class="departure">12:55</td>
+                                        <td class="duration">180 <span>m</span></td>
+                                        <td class="arrival">13:45</td>
+                                        <td class="number">891</td>
+                                        <td class="class">w</td>
+                                        <td class="board">trj</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="airport"><span>3.</span>sfx<u></u>msq</td>
+                                        <td class="departure">14:48</td>
+                                        <td class="duration">180 <span>m</span></td>
+                                        <td class="arrival">13:45</td>
+                                        <td class="number">891</td>
+                                        <td class="class">w</td>
+                                        <td class="board">trj</td>
+                                    </tr>
+                                </table>                             
+                                <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
+                            </li>                     
+                        </ul>
+                        <div class="price"><strong>120 004.00</strong>9 935.00<a href="#">Подробно</a></div>
+                        <div class="reservation"><a href="#" class="search-add active">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
+                    </div>                    
+                    <div class="result-row">
+                        <div class="flight"><h4><b>su</b>47kn</h4>Любые рейсы</div>                    
+                        <ul>
+                            <li>
+                                <div class="flight-city">syd<u></u>ber</div>
+                                <table>
+                                    <tr>
+                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="departure">10:15</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">10:35</td>
+                                        <td class="number">1983</td>
+                                        <td class="class">t</td>
+                                        <td class="board">733</td>
+                                    </tr>
+                                </table>                             
+                                <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
+                            </li>
+                            <li>
+                                <div class="flight-city">ber<u></u>mow</div>
+                                <table>
+                                    <tr>
+                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="departure">13:45</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">22:35</td>
+                                        <td class="number">1983</td>
+                                        <td class="class">w</td>
+                                        <td class="board">733</td>
+                                    </tr>
+                                </table>                             
+                                <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
+                            </li>                     
+                        </ul>
+                        <div class="price"><strong>8 478.00</strong>5 735.00<a href="#">Подробно</a></div>
+                        <div class="reservation"><a href="#" class="search-add active">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
+                    </div>
+                    <div class="result-row">
+                        <div class="flight"><h4><b>su</b>kj64</h4>Любые рейсы</div>                    
+                        <ul>
+                            <li>
+                                <div class="flight-city">mow<u></u>ber</div>
+                                <table>
+                                    <tr>
+                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="departure">12:15</td>
+                                        <td class="duration">17 <span>ч</span> 80 <span>m</span></td>
+                                        <td class="arrival">10:35</td>
+                                        <td class="number">1983</td>
+                                        <td class="class">t</td>
+                                        <td class="board">733</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="airport"><span>2.</span>msq<u></u>sfx</td>
+                                        <td class="departure">12:55</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">13:45</td>
+                                        <td class="number">891</td>
+                                        <td class="class">t</td>
+                                        <td class="board">trj</td>
+                                    </tr>
+                                </table>                             
+                                <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
+                            </li>
+                            <li>
+                                <div class="flight-city">ber<u></u>mow</div>
+                                <table>
+                                    <tr>
+                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="departure">13:45</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">22:35</td>
+                                        <td class="number">1983</td>
+                                        <td class="class">w</td>
+                                        <td class="board">733</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="airport"><span>2.</span>sfx<u></u>msq</td>
+                                        <td class="departure">12:55</td>
+                                        <td class="duration">180 <span>m</span></td>
+                                        <td class="arrival">13:45</td>
+                                        <td class="number">891</td>
+                                        <td class="class">w</td>
+                                        <td class="board">trj</td>
+                                    </tr>
+                                </table>                             
+                                <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
+                            </li>
+                            <li>
+                                <div class="flight-city">ber<u></u>mow</div>
+                                <table>
+                                    <tr>
+                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="departure">13:45</td>
+                                        <td class="duration">80 <span>m</span></td>
+                                        <td class="arrival">22:35</td>
+                                        <td class="number">1983</td>
+                                        <td class="class">w</td>
+                                        <td class="board">733</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="airport"><span>2.</span>sfx<u></u>msq</td>
+                                        <td class="departure">12:55</td>
+                                        <td class="duration">180 <span>m</span></td>
+                                        <td class="arrival">13:45</td>
+                                        <td class="number">891</td>
+                                        <td class="class">w</td>
+                                        <td class="board">trj</td>
+                                    </tr>
+                                </table>                             
+                                <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
+                            </li>                      
+                        </ul>
+                        <div class="price"><strong>98 051.00</strong>9 935.00<a href="#">Подробно</a></div>
+                        <div class="reservation"><a href="#" class="search-add active">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
+                    </div>
+                </div>
+                <!-- end result body -->
+                           
+            </div>            
+            <!-- end result -->
+        </div>
+        <!-- end main -->
+    </div>
+    <!-- end content -->
+         
+    <!-- start footer --> 
+    <div id="footer">
+        <p>&copy; 2012 TUTITUTUTU.RU. All rights reserved.</p>
+        <p class="footer-last">Designed by – <strong>NewIdols</strong></p>
+    </div> 
+    <!-- end footer -->
+</div>
+<!-- end wrap -->
+    
+<!-- start overlay --> 
+<div id="overlay">
+    <!-- start pop-up -->
+    <div class="pop-up">        
+        <h2>Подробнее о цене<span></span></h2>
+         <!-- start pop-up prices -->
+        <table class="pop-up-prices">
+            <tr>
+                <th></th>
+                <th>b2<b>39kn</b></th>
+                <th>b2<b class="pop-up-th-blue">6lg2</b></th>
+                <th class="pop-up-prices-last">b2<b>39kn</b></th>
+            </tr>
+            <tr>
+                <td>Тариф, RUB</td>
+                <td>6 000,46</td>
+                <td>6 000,46</td>
+                <td class="pop-up-prices-last">6 000,46</td>
+            </tr>
+            <tr>
+                <td>Таксы, RUB</td>
+                <td>4 208,74</td>
+                <td>4 208,74</td>
+                <td class="pop-up-prices-last">4 208,74</td>
+            </tr>
+            <tr>
+                <td>Сумма, RUB</td>
+                <td>1 791,72</td>
+                <td>1 791,72</td>
+                <td class="pop-up-prices-last">1 791,72</td>
+            </tr>
+            <tr>
+                <td>Комиссия АК, RUB</td>
+                <td><span>[7% + 1EUR]</span>355,74</td>
+                <td><span>[7% + 1EUR]</span>355,74</td>
+                <td class="pop-up-prices-last"><span>[7% + 1EUR]</span>355,74</td>
+            </tr>
+            <tr>
+                <td>Сбор, RUB</td>
+                <td><span>[3% + 1EUR]</span>245,77</td>
+                <td><span>[3% + 1EUR]</span>245,77</td>
+                <td class="pop-up-prices-last"><span>[3% + 1EUR]</span>245,77</td>
+            </tr>
+            <tr>
+                <td>Заработок агента, RUB</td>
+                <td>245,77</td>
+                <td>245,77</td>
+                <td class="pop-up-prices-last">245,77</td>
+            </tr>
+            <tr>
+                <td>Заработок Субагента, RUB</td>
+                <td>355,74</td>
+                <td>355,74</td>
+                <td class="pop-up-prices-last">355,74</td>
+            </tr>
+            <tr>
+                <td>Тарифное правило</td>
+                <td>1224042</td>
+                <td>1224042</td>
+                <td class="pop-up-prices-last">1224042</td>
+            </tr>
+        </table>
+        <!-- end pop-up prices -->
+        
+        <div class="pop-up-expand">Лог отбора правила<a href="#">Свернуть</a></div>
+        
+        <!-- start pop-up log  -->
+        <div class="pop-up-log">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Правило</th>
+                        <th>Отклонен по признаку</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pop-up-log-first"><a href="#">987342</a>(К:6 | C:0)</td> 
+                        <td class="pop-up-log-first">Внутренний перелет</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">987521</a>(К:7 | C:0)</td> 
+                        <td>Город прибытия</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">1161508</a>(К:9 | C:0)</td> 
+                        <td>Классы кабины Е</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">1161512</a>(К:0 | C:0)</td> 
+                        <td>Классы мест</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">987342</a>(К:6 | C:0)</td> 
+                        <td>Признаки собственного рейса</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">987521</a>(К:7 | C:0)</td> 
+                        <td>Точный маршрут городов</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">1161508</a>(К:9 | C:0)</td> 
+                        <td>Внутренний перелет</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">1161508</a> (К:3.00%  | C:2.00%)</td> 
+                        <td>Город прибытия</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">987342</a>(К:6 | C:0)</td> 
+                        <td>Внутренний перелет</td> 
+                    </tr>
+                    <tr>
+                        <td><a href="#">987521</a>(К:7 | C:0)</td> 
+                        <td>Город прибытия</td> 
+                    </tr>
+                </tbody>                
+            </table>
+        </div>
+        <!-- end pop-up log -->
+        
+        <!-- start pop-up result -->
+        <div class="pop-up-result">
+            <p>Было отобрано несколько правил:<a href="#">987342</a><span>(К:6 | C:0)</span>,<a href="#">987521</a><span>(К:7 | C:0)</span></p>
+            <p>Будет использоваться первое в списке.</p>
+            <a class="search-add" href="#">сообщить об ошибке<span></span><span></span></a>
+        </div>
+        <!-- end pop-up result -->           
+    </div>
+    <!-- end pop-up --> 
+</div> 
+<!-- end overlay -->  
+</body>
+</html>

@@ -1,0 +1,963 @@
+@charset "utf-8";
+/* =General
+--------------------------------------------------------------------------------------------------------*/
+* {  margin: 0; padding: 0; outline:0; font-size: 100%; vertical-align: baseline; background: transparent;}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul { margin: 0; }
+.clear {clear: both;font-size:0; line-height:0;}
+.hidden{display: none;}
+img {border: 0;}
+ol,ul,nav {	list-style:none;}
+:focus {outline: 0;}
+
+html{  min-height: 100% }
+
+aside, nav, footer, header, section { display: block }
+
+html{
+    padding: 0;
+    margin: 0;
+    background: #c0c1c2;
+}
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;   
+}
+.wrap{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;  
+}
+/* End General
+--------------------------------------------------------------------------------------------------------*/        
+
+
+/* =Fonts
+--------------------------------------------------------------------------------------------------------*/
+body { 
+    font: 13px/13px Arial, sans-serif;
+    color: #333;
+}
+/* End Fonts
+--------------------------------------------------------------------------------------------------------*/ 
+
+
+/* =Header
+--------------------------------------------------------------------------------------------------------*/
+#header{
+    padding-top: 1px;
+    *overflow: hidden;
+}
+/* logo and log-out */
+#header #logo{
+    float: left;
+    width: 263px;
+    height: 26px;
+    margin: 20px 0 0 2px;
+    display: inline-block;
+    background: url(../img/logo.jpg) no-repeat;    
+}
+#header #log-out{
+    float: right;
+    margin: 28px 0 0;
+    overflow: hidden;
+    font-weight: bold;
+    color: #333;
+}
+#header #log-out a{
+    color: #666;
+    margin-left: 10px;
+    font-weight: normal;
+}
+/* =End Header
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Middle
+--------------------------------------------------------------------------------------------------------*/
+#content{
+    margin: 24px 0 0;
+}
+/* SEARCH */
+#search{    
+    *margin-top: -64px;    
+    box-shadow: 0 0 3px 2px #a6a7a8;
+    -webkit-box-shadow: 0 0 3px 2px #a6a7a8;
+    -o-box-shadow: 0 0 3px 2px #a6a7a8;
+    -moz-box-shadow: 0 0 3px 2px #a6a7a8;
+    -ms-box-shadow: 0 0 3px 2px #a6a7a8;    
+}
+#search ul{
+    padding: 0; 
+}
+#search li{
+    height: 68px;
+    line-height: 68px;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #eff0f1;
+    border-bottom: 1px solid #d7d9da;
+}
+#search li *{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+#search li > span{
+    font-size: 12px;
+    color: #989898;
+}
+#search li > a.check{
+    width: 19px;
+    height: 19px;
+    margin: 0 6px;
+    vertical-align: middle;
+    background: url(../img/icons/search-option.jpg) no-repeat;    
+}
+/* search direction */
+#search .direction div{    
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 40px 0 10px;
+    margin-left: 8px;
+    color: #666;
+    overflow: hidden;
+    vertical-align: middle;
+    background: #FFF;
+    box-shadow: inset 1px 1px 3px #eeeeee;
+    -webkit-box-shadow: inset 1px 1px 3px #eeeeee;
+    -moz-box-shadow: inset 1px 1px 3px #eeeeee;
+    -o-box-shadow: inset 1px 1px 3px #eeeeee;
+    -ms-box-shadow: inset 1px 1px 3px #eeeeee;
+    border: 1px solid #d5d5d5;
+    position: relative;    
+}
+#search .direction div b{
+    color: #333;
+}
+#search .direction div span{
+    position: absolute;
+    right: 12px;
+    top: 0px;
+    font-size: 11px;
+    padding-top: 1px;
+    color: #999999;
+    text-transform: uppercase;
+}
+#search .direction .direction-date{
+    width: 70px;
+    padding: 0 10px 0 30px;
+    background: #FFF url(../img/icons/search-date.jpg) no-repeat 6px 4px;    
+}
+/* search options */
+#search .options{
+    font-size: 11px;
+    color: #333;
+    text-transform: uppercase;
+}
+*+html #search .options > span{
+    margin-right: 9px;
+}
+#search .options a{
+    height: 21px;
+    position: relative;
+    line-height: 21px;
+    padding: 0 6px;
+    margin-left: 9px;
+    color: #FFF;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../img/search-buttons.png) repeat-x 0 -21px;
+}
+#search .options a span{
+    height: 21px;
+    line-height: 21px;
+    width: 3px;
+    position: absolute;
+    right: 100%;
+    top: 0;    
+    background: url(../img/search-buttons.png) no-repeat 0 0;
+}
+#search .options a span ~ span{   
+    left: 100%;    
+    background-position: 0 -42px;
+}
+
+#search .options .active{
+    color: #666;
+    background-position: 0 -84px;
+}
+#search .options .active span{
+    color: #666;
+    background-position: 0 -63px;
+}
+#search .options .active span ~ span{
+    background-position: 0 -105px;
+}
+/* search close button */
+#search .close{
+    width: 9px;
+    height: 9px;
+    *position: relative;
+    *top: -3px;
+    margin-left: 17px;
+    background: url(../img/icons/search-close.png) no-repeat;    
+}
+/* searh and add button */
+#search .search-add{
+    margin: 19px 0 0 0;
+    *margin-top: -50px;
+}
+#search .search-add{
+    min-width: 70px;
+}
+.search-add{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;    
+    position: relative;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../img/search-add.png) repeat-x 0 -30px;    
+    float: right;      
+}
+.search-add span{
+    height: 30px;
+    line-height: 30px;
+    margin: 0 !important;
+    position: absolute;
+    width: 5px;
+    right: 100%;
+    top: 0;
+    background: url(../img/search-add.png) no-repeat 0 0;  
+}
+.search-add span ~ span{   
+    left: 100%;
+    background-position: 0 -60px;
+}
+.search-add.active{
+    background-position: 0 -120px;
+}
+.search-add.active span{
+    background-position: 0 -90px;
+}
+.search-add.active span ~ span{
+    background-position: 0 -150px;
+}
+/* CURRENCY */
+#search > div{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 20px;    
+    overflow: hidden;
+    color: #FFF;
+    font-size: 11px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background: #323e46;
+    border-bottom: 1px solid #3c474e;    
+}
+#search > div *{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+#search > div > div{
+    margin-right: 36px;
+}
+#search > div > .last a, #search > div > div:first-child a{
+    text-transform: none;
+} 
+#search > div > div:first-child a{
+    padding: 0 3px;
+}
+#search > div > div.last a, #search > div > div.second a{
+    padding: 0 7px;
+}
+*+html #search > div > div > span{
+    margin-right: 9px;
+}
+/* currency buttons */
+#search > div .button{
+    height: 23px;
+    line-height: 23px;
+    padding: 0 5px;
+    margin-left: 11px;
+    color: #FFF;
+    font-size: 11px;
+    text-decoration: none;
+    position: relative; 
+    background: url(../img/currency.png) repeat-x 0 -23px;   
+}
+#search > div .button:first-child{
+    margin-left: 15px;
+}
+#search > div .button span{
+    height: 23px;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    margin: 0 !important;
+    width: 5px;
+    *vertical-align: middle;   
+    background: url(../img/currency.png) no-repeat 0 0;    
+}
+#search > div .button span ~ span{   
+    left: 100%;    
+    background: url(../img/currency.png) no-repeat 0 -46px;    
+}
+#search > div .button.active{
+    height: 21px;
+    line-height: 21px;
+    color: #666;
+    background-position: 0 -90px;    
+}
+#search > div .button.active span{
+    height: 21px;
+    line-height: 21px;    
+    background-position: 0 -69px;    
+}
+#search > div .button.active span ~ span{
+    background-position: 0 -111px;
+}
+
+/* MAIN */
+#main{
+    position: relative;
+    margin-top: 60px;
+     box-shadow: 0 0 3px 2px #a6a7a8;
+    -webkit-box-shadow: 0 0 3px 2px #a6a7a8;
+    -o-box-shadow: 0 0 3px 2px #a6a7a8;
+    -moz-box-shadow: 0 0 3px 2px #a6a7a8;
+    -ms-box-shadow: 0 0 3px 2px #a6a7a8; 
+}
+/* TABS */
+#main #tabs{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 100%;
+    overflow: hidden;
+}
+#main #tabs li{
+    height: 30px;
+    float: left;
+    margin-right: 6px;
+    padding-left: 5px;
+    line-height: 30px;
+    vertical-align: middle;
+    list-style-type: none;
+    position: relative;
+}
+#main #tabs li *{
+    display: inline-block;
+}
+#main #tabs li a{
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    color: #FFF;
+    padding: 0 30px 0 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;   
+    background: url(../img/tabs.png) repeat-x 0 -30px;    
+}
+#main #tabs li a span{
+    height: 30px;
+    width: 5px;
+    line-height: 30px;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background: url(../img/tabs.png) no-repeat 0 0px;    
+}
+#main #tabs li a span ~ span{
+    left: 100%;
+    background: url(../img/tabs.png) no-repeat 0 -60px;
+}
+#main #tabs li .active{
+    background-position: 0 -120px;    
+}
+#main #tabs li .active span{
+    background-position: 0 -90px;    
+}
+#main #tabs li .active span ~ span{
+    background-position: 0 -150px;    
+}
+#main #tabs li a b{
+    font-size: 14px;
+    margin-right: 8px;
+}
+#main #tabs li a u{
+    width: 16px;
+    margin: 0 1px;
+    *padding-right: 3px;
+    height: 9px;
+    *position: relative;
+    *top: -3px;
+    *left: 3px;
+    background: url(../img/icons/tab-arrow.png) no-repeat;    
+}
+#main #tabs li .tab-close{
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    z-index: 1;
+    cursor: pointer;
+    background: url(../img/icons/tab-close.png) no-repeat 0 0;
+}
+/* FILTERS */
+#main #filters{
+    padding: 18px 20px 28px 20px;
+    background: #FFF;
+}
+#main #filters h2{
+    margin: 0;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#main #filters ul{
+    margin: 18px 0 0 0;
+}
+#main #filters li{
+    padding: 0;
+    margin-bottom: 12px;
+    width: 225px;
+    float: left;
+    list-style-type: none;
+}
+#main #filters label{
+    color: #999;
+    font-size: 13px;
+    cursor: pointer;
+}
+#main #filters label b{
+    color: #333;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+#main #filters label input{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+#main #filters label input + span{
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 -14px;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url(../img/icons/radio.png) no-repeat;
+}
+#main #filters label input:checked + span{
+    background-position: 0 -14px;
+}
+#main #filters > div{
+    clear: both;
+    height: 14px;
+    line-height: 14px;
+    padding-top: 8px;
+    color: #333;
+    vertical-align: middle;
+}
+#main #filters > div label{
+    color: #333;
+}
+/* RESULT*/
+#result{
+    padding-bottom: 10px;
+    background: #f5f5f6;    
+}
+/* result headings */
+
+#result h3{
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    color: #989898;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-weight: normal;
+    background: #fff;
+    border-top: 1px solid #e3e4e4;        
+    border-bottom: 1px solid #e3e4e4;   
+}
+#result .h-flight{
+    width: 160px;
+    padding-left: 51px;
+}
+#result .h-airport{
+    width: 108px;
+}
+#result .h-departure{
+    width: 50px;
+    *text-align: right;
+}
+#result .h-duration{
+    width: 63px;
+}
+#result .h-arrival{
+    width: 65px;
+    *text-align: right;    
+}
+#result .h-number{
+    width: 54px;
+    *text-align: right;    
+}
+#result .h-class{
+    width: 51px;
+    *text-align: right;    
+}
+#result .h-board{
+    width: 42px;
+    *text-align: right; 
+}
+#result .h-price{
+    width: 296px;
+}
+/* result body */
+#result > div{
+    clear: both;
+}
+#result > div ul{
+    padding: 0;
+    margin: 0;
+}
+#result > div ul li{
+    padding: 10px 0 13px 0;
+    vertical-align: middle;
+    border-top: 1px solid #dbdcde;
+}
+#result > div ul li:first-child{
+    padding: 17px 0 6px 0;
+    border-top: none;
+}
+#result > div ul li > *{
+    display: inline-block;
+    vertical-align: middle;
+    *display: inline;
+    zoom: 1;    
+}
+#result > div ul td{
+    line-height: 22px;
+}
+#result .result-row{
+    padding: 0px 20px;
+    overflow: hidden;
+    background: #f5f5f6;
+    border-top: 1px solid #dbdcde;
+}
+#result .result-row:first-child{
+    border-top: none;
+}
+#result .result-row > *{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+#result u{
+    width: 12px;
+    margin: 0 3px;
+    padding-bottom: 3px;
+    height: 7px;
+    line-height: 13px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/icons/result-arrow.png) no-repeat;    
+}
+/* result flight */
+#result .flight{
+    width: 90px;
+    font-size: 11px;
+    color: #989898;
+}
+#result .flight h4{
+    width: 60px;
+    margin: 0 0 8px 0;
+    padding: 2px 8px 2px 10px;
+    color: #44cdff;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #334450; 
+    border-top: 1px solid #3e4e5a;   
+    border-bottom: 1px solid #3e4e5a;   
+}
+#result .flight b{
+    color: #FFF;
+    margin-right: 5px;   
+}
+/* result flight-city */
+#result .flight-city{
+    width: 90px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* result airport */
+#result .airport{
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 110px;
+}
+#result .airport span{
+    color: #989898;
+    margin-right: 10px;
+    font-size: 11px;
+    font-weight: normal;   
+}
+#result .airport .count-hidden{
+    visibility: hidden;
+}
+/* result departure */
+#result .departure{
+    width: 45px;
+    text-align: center;
+    font-weight: bold;
+    color: #008fc4;
+}
+/* result duration */
+#result .duration{
+    width: 55px;
+    padding-left: 16px;
+    text-align: left;
+}
+#result .duration span{
+    font-variant: small-caps;    
+}
+/* result arrival */
+#result .arrival{
+    width: 43px;
+    padding-left: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #008fc4;
+}
+/* result number */
+#result .number{
+    width: 53px;
+    text-align: right;
+}
+/* result class */
+#result .class{
+    width: 40px;
+    padding-left: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* result board */
+#result .board{
+    width: 35px;
+    text-align: right;
+    color: #989898;
+    text-transform: uppercase;
+}
+/* result check */
+#result .check{
+    padding-left: 12px;
+}
+#result .check label{
+    cursor: pointer;
+    position: relative;    
+}
+#result .check label input{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+#result .check  input + span{
+    width: 14px;
+    height: 14px;
+    margin: 0 0 0 -14px;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url(../img/icons/radio.png) no-repeat;
+}
+#result .check input:checked + span{
+    background-position: 0 -14px;
+}
+/* result price */
+#result .price{
+    width: 132px;
+    color: #666;
+    text-align: right;
+}
+#result .price strong{
+    margin-bottom: 3px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: bold;    
+    display: block;
+    color: #333;
+}
+#result .price a{
+    display: block;
+    color: #008fc4;
+    font-weight: normal;
+    font-size: 11px;
+    margin-top: 7px;
+}
+/* result reservation */
+#result .reservation{
+    width: 115px;
+    *width: 112px;
+    text-align: right;
+    padding-bottom: 10px;
+}
+#result .reservation a{
+    display: block;
+    margin-top: 6px;
+    padding-left: 12px;
+    text-align: left;
+    font-size: 11px;
+    color: #989898;    
+}
+#result .reservation .search-add{
+     padding: 0 5px;
+    font-size: 10px;
+    color: #FFF;
+    margin: 0;
+    float: none;
+    *float: right;    
+    display: inline-block;
+}
+/* End Middle
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* =Footer
+--------------------------------------------------------------------------------------------------------*/
+#footer{
+    margin-top: 30px;
+    position: relative;
+    padding: 0 0 50px 0;
+}
+#footer p{
+    color: #595959;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0;
+}
+#footer p.footer-last{
+    position: absolute;
+    top: 0;
+    right: 0;    
+}
+#footer p.footer-last strong{
+    color: #FFF;
+    padding: 3px 3px;
+    display: inline-block;
+    background: #334450;
+    text-transform: uppercase;
+}
+/* End Footer
+--------------------------------------------------------------------------------------------------------*/
+
+
+/* Pop-Up
+--------------------------------------------------------------------------------------------------------*/
+     
+        /* Overlay and Pop-up general*/
+#overlay{
+    min-width: 100%;
+    min-height: 100%;
+    color: #333;
+    background: url(../img/pop-up.png);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+#overlay .pop-up{
+    width: 666px;
+    margin: 100px  auto 0;
+    padding-bottom: 1px;
+    position: relative;
+    background: #FFF url(../img/pop-up-head.png) repeat-x 0 0;
+}
+#overlay h2{
+    height: 29px;
+    line-height: 29px;
+    vertical-align: middle;
+    padding-left: 20px;
+    margin: 0;
+    position: relative;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: url(../img/pop-up-head.png) repeat-x 0 0;    
+}
+#overlay h2 span{
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    background: url(../img/icons/tab-close.png) no-repeat;
+}
+#overlay a{
+    color: #008fc4;    
+}
+#overlay span{
+    color: #989898;    
+}
+/* pop-up prices */
+.pop-up-prices{
+    width: 100%;    
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    text-transform: uppercase;    
+}
+.pop-up-prices th{
+    height: 28px;
+    text-align: right;
+    font-size: 14px;
+    color: #bababa;
+    vertical-align: middle;
+    background: #334450;
+}
+.pop-up-prices th b{
+    margin-left: 4px;
+}
+.pop-up-prices th b.pop-up-th-blue{
+    color: #44cdff;
+}
+.pop-up-prices tbody tr{
+    background: #FFF;
+    border-bottom: 1px solid #e3e4e4;
+}
+.pop-up-prices th:first-child{
+    width: 175px;
+} 
+.pop-up-prices .pop-up-prices-last{
+    padding-right: 20px;
+} 
+.pop-up-prices tr td:first-child{
+    color: #989898;
+    font-size: 10px; 
+    text-align: left; 
+    padding-left: 20px;  
+}
+.pop-up-prices tr:last-child td{
+    color: #989898;    
+    font-weight: normal;
+}
+.pop-up-prices td{
+    height: 31px;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+}
+.pop-up-prices td span{
+    color: #989898;
+    margin-right: 4px;
+    font-weight: normal;
+}
+/* pop-up expand */
+.pop-up-expand{
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-size: 11px;
+}
+.pop-up-expand a{
+    margin-left: 9px;
+}
+/* pop-up log */
+.pop-up-log{
+   margin-bottom: 35px; 
+}
+.pop-up-log table{
+    width: 100%;    
+    font-size: 13px;
+    margin-top: 34px;
+    border-collapse: collapse;    
+}
+.pop-up-log thead th{
+    padding:10px 0 8px;
+    color: #989898;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e3e4e4;
+}
+.pop-up-log thead th:first-child{
+    padding-left: 20px;
+    width: 200px;
+}
+.pop-up-log td{
+    height: 24px;
+}
+.pop-up-log td:first-child{
+    padding-left: 20px;
+    width: 200px;
+    color: #989898;
+}
+.pop-up-log td.pop-up-log-first{
+    padding-top: 18px;    
+}
+.pop-up-log td a{
+    margin-right: 4px;
+}
+.pop-up-log > p{
+    color: #333;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 8px 20px 0px 20px;
+    *padding-top: 10px;
+}
+.pop-up-log > p a{
+    display: block;
+    margin-top: 9px;
+    text-align: right;
+}
+/* pop-up result */
+.pop-up-result{
+    margin-bottom: 20px;
+    padding: 3px 20px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    position: relative;
+}
+.pop-up-result p{
+    line-height: 12px;
+    margin: 0 0 7px 0;
+    padding-right: 160px;
+}
+.pop-up-result a{
+    margin: 0 4px;
+}
+#overlay .pop-up-result .search-add{
+    display: block;
+    color: #FFF;
+    font-size: 10px;
+    padding: 0 8px;
+    margin: 0;    
+    position: absolute;
+    top: 3px;
+    right: 25px;
+    float: none;   
+}
+/* End Pop-Up
+--------------------------------------------------------------------------------------------------------*/
