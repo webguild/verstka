@@ -122,6 +122,7 @@ body {
     padding: 0 40px 0 10px;
     margin-left: 8px;
     color: #666;
+    font-size: 16px;
     overflow: hidden;
     vertical-align: middle;
     background: #FFF;
@@ -147,6 +148,7 @@ body {
 }
 #search .direction .direction-date{
     width: 70px;
+    font-size: 13px;
     padding: 0 10px 0 30px;
     background: #FFF url(../img/icons/search-date.jpg) no-repeat 6px 4px;    
 }
@@ -159,12 +161,15 @@ body {
 *+html #search .options > span{
     margin-right: 9px;
 }
+#search .options a.first{
+    margin-left: 4px;
+}
 #search .options a{
     height: 21px;
     position: relative;
     line-height: 21px;
     padding: 0 6px;
-    margin-left: 9px;
+    margin-left: 8px;
     color: #FFF;
     font-size: 11px;
     text-transform: uppercase;
@@ -270,6 +275,9 @@ body {
 #search > div > div{
     margin-right: 36px;
 }
+#search > div > .second{
+    margin-right: 26px;
+}
 #search > div > .last a, #search > div > div:first-child a{
     text-transform: none;
 } 
@@ -294,8 +302,8 @@ body {
     position: relative; 
     background: url(../img/currency.png) repeat-x 0 -23px;   
 }
-#search > div .button:first-child{
-    margin-left: 15px;
+#search > div.second .button.first{
+    margin-left: 8px !important;
 }
 #search > div .button span{
     height: 23px;
@@ -361,13 +369,16 @@ body {
     height: 30px;
     line-height: 30px;
     position: relative;
-    color: #FFF;
+    color: #bbbbbb;
     padding: 0 30px 0 14px;
     font-size: 13px;
     text-transform: uppercase;
     text-decoration: none;
     position: relative;   
     background: url(../img/tabs.png) repeat-x 0 -30px;    
+}
+#main #tabs li a b{
+    color: #FFF;
 }
 #main #tabs li a span{
     height: 30px;
@@ -383,6 +394,7 @@ body {
     background: url(../img/tabs.png) no-repeat 0 -60px;
 }
 #main #tabs li .active{
+    color: #fff;
     background-position: 0 -120px;    
 }
 #main #tabs li .active span{
@@ -542,6 +554,9 @@ body {
     padding: 10px 0 13px 0;
     vertical-align: middle;
     border-top: 1px solid #dbdcde;
+}
+#result > #results > .active{
+    background: #e1f3fa;
 }
 #result > ul#results ul li:first-child{
     padding: 17px 0 6px 0;
@@ -759,7 +774,7 @@ body {
 }
 #footer p.footer-last{
     position: absolute;
-    top: 0;
+    top: -2px;
     right: 0;    
 }
 #footer p.footer-last strong{
@@ -786,14 +801,18 @@ body {
     top: 0;
     z-index: 10;
 }
-#overlay .pop-up{
+.pop-up{
     width: 666px;
-    margin: 100px  auto 0;
+    margin: 0 auto;
     padding-bottom: 1px;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    margin-left: -333px;
+    top: 200px;
+    z-index: 11;
     background: #FFF url(../img/pop-up-head.png) repeat-x 0 0;
 }
-#overlay h2{
+.pop-up h2{
     height: 29px;
     line-height: 29px;
     vertical-align: middle;
@@ -806,7 +825,7 @@ body {
     text-transform: uppercase;
     background: url(../img/pop-up-head.png) repeat-x 0 0;    
 }
-#overlay h2 span{
+.pop-up h2 span{
     width: 9px;
     height: 9px;
     position: absolute;
@@ -816,10 +835,10 @@ body {
     display: inline-block;
     background: url(../img/icons/tab-close.png) no-repeat;
 }
-#overlay a{
+.pop-up a{
     color: #008fc4;    
 }
-#overlay span{
+.pop-up span{
     color: #989898;    
 }
 /* pop-up prices */
@@ -950,7 +969,7 @@ body {
 .pop-up-result a{
     margin: 0 4px;
 }
-#overlay .pop-up-result .search-add{
+.pop-up-result .search-add{
     display: block;
     color: #FFF;
     font-size: 10px;
