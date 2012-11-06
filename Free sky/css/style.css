@@ -106,6 +106,7 @@ body {
 #search li > span{
     font-size: 12px;
     color: #989898;
+	margin-right:8px;
 }
 #search li > a.check{
     width: 19px;
@@ -114,44 +115,12 @@ body {
     vertical-align: middle;
     background: url(../img/icons.png) no-repeat -20px -20px;    
 }
+#search li .dropdown {
+	margin-right:10px;
+}
+
 /* search direction */
-#search .direction div{    
-    width: 160px;
-    height: 28px;
-    line-height: 28px;
-    padding: 0 40px 0 10px;
-    margin-left: 8px;
-    color: #666;
-    font-size: 16px;
-    overflow: hidden;
-    vertical-align: middle;
-    background: #FFF;
-    box-shadow: inset 1px 1px 3px #eeeeee;
-    -webkit-box-shadow: inset 1px 1px 3px #eeeeee;
-    -moz-box-shadow: inset 1px 1px 3px #eeeeee;
-    -o-box-shadow: inset 1px 1px 3px #eeeeee;
-    -ms-box-shadow: inset 1px 1px 3px #eeeeee;
-    border: 1px solid #d5d5d5;
-    position: relative;    
-}
-#search .direction div b{
-    color: #333;
-}
-#search .direction div span{
-    position: absolute;
-    right: 12px;
-    top: 0px;
-    font-size: 11px;
-    padding-top: 1px;
-    color: #999999;
-    text-transform: uppercase;
-}
-#search .direction .direction-date{
-    width: 70px;
-    font-size: 13px;
-    padding: 0 10px 0 30px;
-    background: #FFF url(../img/icons.png) no-repeat -75px 4px;    
-}
+
 /* search options */
 #search .options{
     font-size: 11px;
@@ -161,46 +130,10 @@ body {
 *+html #search .options > span{
     margin-right: 9px;
 }
-#search .options a.first{
+#search .options span + a {
     margin-left: 4px;
 }
-#search .options a{
-    height: 21px;
-    position: relative;
-    line-height: 21px;
-    padding: 0 6px;
-    margin-left: 8px;
-    color: #FFF;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: url(../img/search-buttons.png) repeat-x 0 -21px;
-}
-#search .options a span{
-    height: 21px;
-    line-height: 21px;
-    width: 3px;
-    position: absolute;
-    right: 100%;
-    top: 0;    
-    background: url(../img/search-buttons.png) no-repeat 0 0;
-}
-#search .options a span ~ span{   
-    left: 100%;    
-    background-position: 0 -42px;
-}
 
-#search .options .active{
-    color: #666;
-    background-position: 0 -84px;
-}
-#search .options .active span{
-    color: #666;
-    background-position: 0 -63px;
-}
-#search .options .active span ~ span{
-    background-position: 0 -105px;
-}
 /* search close button */
 #search .close{
     width: 9px;
@@ -211,49 +144,15 @@ body {
     background: url(../img/icons.png) no-repeat -20px 0;    
 }
 /* searh and add button */
-#search .search-add{
+#search .add{
     margin: 19px 0 0 0;
     *margin-top: -50px;
 }
-#search .search-add{
+#search .add{
     min-width: 70px;
+	float: right;  
 }
-.search-add{
-    height: 30px;
-    line-height: 30px;
-    padding: 0 15px;    
-    position: relative;
-    color: #FFF;
-    font-size: 12px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: url(../img/search-add.png) repeat-x 0 -30px;    
-    float: right;      
-}
-.search-add span{
-    height: 30px;
-    line-height: 30px;
-    margin: 0 !important;
-    position: absolute;
-    width: 5px;
-    right: 100%;
-    top: 0;
-    background: url(../img/search-add.png) no-repeat 0 0;  
-}
-.search-add span ~ span{   
-    left: 100%;
-    background-position: 0 -60px;
-}
-.search-add.active{
-    background-position: 0 -120px;
-}
-.search-add.active span{
-    background-position: 0 -90px;
-}
-.search-add.active span ~ span{
-    background-position: 0 -150px;
-}
+
 /* CURRENCY */
 #search > div{
     height: 70px;
@@ -290,49 +189,6 @@ body {
 *+html #search > div > div > span{
     margin-right: 9px;
 }
-/* currency buttons */
-#search > div .button{
-    height: 23px;
-    line-height: 23px;
-    padding: 0 5px;
-    margin-left: 11px;
-    color: #FFF;
-    font-size: 11px;
-    text-decoration: none;
-    position: relative; 
-    background: url(../img/currency.png) repeat-x 0 -23px;   
-}
-#search > div.second .button.first{
-    margin-left: 8px !important;
-}
-#search > div .button span{
-    height: 23px;
-    position: absolute;
-    right: 100%;
-    top: 0;
-    margin: 0 !important;
-    width: 5px;
-    *vertical-align: middle;   
-    background: url(../img/currency.png) no-repeat 0 0;    
-}
-#search > div .button span ~ span{   
-    left: 100%;    
-    background: url(../img/currency.png) no-repeat 0 -46px;    
-}
-#search > div .button.active{
-    height: 21px;
-    line-height: 21px;
-    color: #666;
-    background-position: 0 -90px;    
-}
-#search > div .button.active span{
-    height: 21px;
-    line-height: 21px;    
-    background-position: 0 -69px;    
-}
-#search > div .button.active span ~ span{
-    background-position: 0 -111px;
-}
 
 /* MAIN --------------------------------------------------- */
 #main{
@@ -345,94 +201,17 @@ body {
     -ms-box-shadow: 0 0 3px 2px #a6a7a8; 
 }
 /* TABS */
-#main #tabs{
+#main .tabs{
     margin: 0;
     padding: 0;
     position: absolute;
     bottom: 100%;
     overflow: hidden;
 }
-#main #tabs li{
-    height: 30px;
-    float: left;
-    margin-right: 6px;
-    padding-left: 5px;
-    line-height: 30px;
-    vertical-align: middle;
-    list-style-type: none;
-    position: relative;
-}
-#main #tabs li *{
-    display: inline-block;
-}
-#main #tabs li a{
-    height: 30px;
-    line-height: 30px;
-    position: relative;
-    color: #bbbbbb;
-    padding: 0 30px 0 14px;
-    font-size: 13px;
-    text-transform: uppercase;
-    text-decoration: none;
-    position: relative;   
-    background: url(../img/tabs.png) repeat-x 0 -30px;    
-}
-#main #tabs li a b{
-    color: #FFF;
-}
-#main #tabs li a span{
-    height: 30px;
-    width: 5px;
-    line-height: 30px;
-    position: absolute;
-    right: 100%;
-    top: 0;
-    background: url(../img/tabs.png) no-repeat 0 0px;    
-}
-#main #tabs li a span ~ span{
-    left: 100%;
-    background: url(../img/tabs.png) no-repeat 0 -60px;
-}
-#main #tabs li.active a{
-    color: #fff;
-    background-position: 0 -120px;    
-}
-#main #tabs li.active a  span{
-    background-position: 0 -90px;    
-}
-#main #tabs li.active a  span ~ span{
-    background-position: 0 -150px;    
-}
-#main #tabs li a b{
-    font-size: 14px;
-    margin-right: 8px;
-}
-#main #tabs li a u{
-    width: 16px;
-    margin: 0 1px;
-    *padding-right: 3px;
-    height: 9px;
-    *position: relative;
-    *top: -3px;
-    *left: 3px;
-    background: url(../img/icons.png) no-repeat -20px -40px;    
-}
-#main #tabs li.active a u {
-	background-position:-40px -40px;  
-}
-#main #tabs li .tab-close{
-    width: 9px;
-    height: 9px;
-    position: absolute;
-    top: 10px;
-    right: 8px;
-    z-index: 1;
-    cursor: pointer;
-    background: url(../img/icons.png) no-repeat -40px 0;
-}
+
 /* FILTERS */
 #main #filters{
-    padding: 18px 20px 28px 20px;
+    padding: 18px 20px 27px 20px;
     background: #FFF;
 }
 #main #filters h2{
@@ -462,22 +241,7 @@ body {
     margin-right: 8px;
     text-transform: uppercase;
 }
-input[type="radio"]{
-    visibility: hidden;
-    margin: 0;
-    padding: 0;
-}
-input[type="radio"] + span{
-    width: 14px;
-    height: 14px;
-    margin: 0 4px 0 -14px;
-    display: inline-block;
-    vertical-align: bottom;
-    background: url(../img/icons.png) no-repeat;
-}
-input:checked + span{
-    background-position: 0 -20px;
-}
+
 #main #filters > div{
     clear: both;
     height: 14px;
@@ -639,9 +403,10 @@ input:checked + span{
 }
 #result .airport span{
     color: #989898;
-    margin-right: 10px;
     font-size: 11px;
-    font-weight: normal;   
+    font-weight: normal;
+	width:20px;   
+	display: inline-block;
 }
 #result .airport .count-hidden{
     visibility: hidden;
@@ -691,7 +456,7 @@ input:checked + span{
 }
 /* result check */
 #result .check{
-    padding-left: 12px;
+    padding-left: 7px;
 }
 #result .check label{
     cursor: pointer;
@@ -701,14 +466,11 @@ input:checked + span{
     visibility: hidden;
     margin: 0;
     padding: 0;
+	vertical-align: middle;
 }
 #result .check  input + span{
-    width: 14px;
-    height: 14px;
-    margin: 0 0 0 -14px;
-    display: inline-block;
-    vertical-align: bottom;
-    background: url(../img/icons.png) no-repeat;
+   margin: 0 0 0 -14px;
+   top:0;
 }
 #result .check input:checked + span{
     background-position: 0 -20px;
@@ -744,20 +506,22 @@ input:checked + span{
 #result .reservation a{
     display: block;
     margin-top: 6px;
-    padding-left: 12px;
-    text-align: left;
-    font-size: 11px;
-    color: #989898;    
+	text-align: left;
+    font-size: 10px;
+    color: #989898; 
+	width:110px;
+	margin-left:10px;
+	
 }
-#result .reservation .search-add{
-     padding: 0 5px;
+#result .reservation .button{
+    padding: 0 5px;
     font-size: 10px;
     color: #FFF;
-    margin: 0;
-    float: none;
-    *float: right;    
     display: inline-block;
+	margin-left:13px;
+	width: auto;
 }
+
 /* End Middle
 --------------------------------------------------------------------------------------------------------*/
 
@@ -790,12 +554,264 @@ input:checked + span{
 /* End Footer
 --------------------------------------------------------------------------------------------------------*/
 
+/* Content Style
+--------------------------------------------------------------------------------------------------------*/
+
+/* Forms Elements ---------------------------------------------------*/
+input[type="text"] {
+	height:28px;
+	border:1px solid #d5d5d5;
+	vertical-align: middle;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+	vertical-align: middle;
+}
+input[type="radio"] + span {
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 -14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/icons.png) no-repeat;
+	position: relative;
+	top:-2px;
+}
+input:checked + span{
+    background-position: 0 -20px;
+}
+
+input.date{
+    width: 70px;
+    font-size: 13px;
+    padding: 0 10px 0 30px;
+    background: #FFF url(../img/icons.png) no-repeat -75px 4px;
+}
+
+/* Buttons (links) --------------------------------------------------*/
+/* Button */
+.button {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	position: relative;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: url(../img/bgs.png) repeat-x 0 -335px;
+	display: inline-block;
+	color:#fff !important;
+}
+
+.button span {
+	height: inherit;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: absolute;
+	width: 5px;
+	right: 100%;
+	top: 0;
+	background: url(../img/bgs.png) 0 -300px;
+}
+
+.button span ~ span {
+	left: 100%;
+	background-position: 0 -370px;
+}
+.button.blue {
+	background-position: 0 -440px;
+}
+.button.blue span {
+	background-position: 0 -405px;
+}
+.button.blue span ~ span {
+	background-position: 0 -475px;
+}
+/* Button Small */
+.button.small {
+	height: 21px;
+	line-height: 21px;
+	padding: 0 6px;
+	margin-left: 8px;
+	font-size: 11px;
+	background-position: 0 -25px;
+}
+.button.small span{
+    width: 3px;
+	background-position: 0 0;
+}
+.button.small span ~ span{   
+    left: 100%;    
+    background-position: -2px -50px;    
+}
+.button.small.active {
+	color: #666;
+   	background-position: 0 -100px;   
+}
+
+.button.small.active span {
+	background-position: 0 -75px;
+}
+
+.button.small.active span ~ span{
+    background-position: -2px -125px;
+}
+
+.button.smallalt {
+	height:23px;
+	line-height: 23px;
+	background-position:0 -175px;
+	margin-left: 11px;
+	padding:0 5px;
+	font-size:11px;
+	
+}
+.button.smallalt span {
+	width:5px;
+	background-position:0 -150px;
+}
+.button.smallalt span ~ span {
+	width:5px;
+	background-position:0 -200px;
+}
+.button.smallalt.active {
+	height:21px;
+	line-height:21px;
+	background-position:0 -250px;
+	color:#666 !important;
+}
+.button.smallalt.active span{
+	background-position:0 -225px;
+}
+.button.smallalt.active span ~ span{
+	background-position:0 -275px;
+}
+
+/* Tabs ---------------------*/
+.tabs:after {
+	display: block;
+	content:' ';
+	clear: both;
+	height:0;
+}
+.tabs li {
+	height: 30px;
+	float: left;
+	line-height:30px;
+	background: url(../img/bgs.png) repeat-x 0 -545px;  
+	margin:0 6px 0 5px;
+	position: relative;  
+	font-size: 13px;
+}
+.tabs li > span {
+	position: absolute;
+	height: inherit;
+	top:0;
+	right:100%;
+	width:5px;
+	background: url(../img/bgs.png) repeat-x 0 -510px;
+}
+.tabs li > span ~ span {
+	background-position:0 -580px;
+	left:100%;
+}
+.tabs li a {
+	color: #bbbbbb;
+	text-transform: uppercase;
+    text-decoration: none;
+	display: inline-block;
+	height: inherit;
+	padding: 0 30px 0 14px;
+}
+.tabs li a b {
+	color: #FFF;
+	font-size: 14px;
+    margin-right: 8px;
+}
+.tabs li a u{
+    width: 16px;
+    margin: 0 1px;
+	display: inline-block;
+    /**padding-right: 3px;*/
+    height: 9px;
+    *position: relative;
+    /**top: -3px;*/
+    /**left: 3px;*/
+    background: url(../img/icons.png) no-repeat -20px -40px;    
+}
+.tabs li.active {
+	background-position:0 -650px; 
+}
+.tabs li.active > span {
+	background-position:0 -615px; 
+}
+.tabs li.active > span ~ span {
+	background-position:0 -685px;
+}
+.tabs li.active a {
+	color:#fff;
+}
+.tabs li.active a u {
+	background-position:-40px -40px;  
+}
+.tabs li .close{
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    z-index: 1;
+    cursor: pointer;
+    background: url(../img/icons.png) no-repeat -40px 0;
+}
+
+/* DropDown */
+.dropdown {    
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 40px 0 10px;
+   
+    color: #666;
+    font-size: 16px;
+    overflow: hidden;
+    vertical-align: middle;
+    background: #FFF;
+    box-shadow: inset 1px 1px 3px #eeeeee;
+    -webkit-box-shadow: inset 1px 1px 3px #eeeeee;
+    -moz-box-shadow: inset 1px 1px 3px #eeeeee;
+    -o-box-shadow: inset 1px 1px 3px #eeeeee;
+    -ms-box-shadow: inset 1px 1px 3px #eeeeee;
+    border: 1px solid #d5d5d5;
+    position: relative;    
+}
+.dropdown b{
+    color: #333;
+}
+.dropdown span{
+    position: absolute;
+    right: 12px;
+    top: 0px;
+    font-size: 11px;
+    padding-top: 1px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+
+/* end Content Style
+--------------------------------------------------------------------------------------------------------*/
 
 /* Pop-Up
 --------------------------------------------------------------------------------------------------------*/
      
-        /* Overlay and Pop-up general*/
-#overlay{
+        /* Overlay and window general*/
+#overlay {
     min-width: 100%;
     min-height: 100%;
     color: #333;
@@ -804,7 +820,7 @@ input:checked + span{
     top: 0;
     z-index: 10;
 }
-.pop-up{
+.window {
     width: 666px;
     margin: 0 auto;
     padding-bottom: 1px;
@@ -813,9 +829,9 @@ input:checked + span{
     margin-left: -333px;
     top: 200px;
     z-index: 11;
-    background: #FFF url(../img/pop-up-head.png) repeat-x 0 0;
+    background: #fff;
 }
-.pop-up h2{
+.window h2{
     height: 29px;
     line-height: 29px;
     vertical-align: middle;
@@ -828,7 +844,7 @@ input:checked + span{
     text-transform: uppercase;
     background: url(../img/pop-up-head.png) repeat-x 0 0;    
 }
-.pop-up h2 span{
+.window .close{
     width: 9px;
     height: 9px;
     position: absolute;
@@ -836,22 +852,29 @@ input:checked + span{
     right: 10px;
     cursor: pointer;
     display: inline-block;
-    background: url(../img/icons/tab-close.png) no-repeat;
+    background: url(../img/icons.png) no-repeat -40px 0;
 }
-.pop-up a{
+.window h2 u {
+	width: 16px;
+	margin: 0 1px;
+	height: 9px;
+	background: url(../img/icons.png) no-repeat -40px -40px;
+	display: inline-block;
+}
+.window a{
     color: #008fc4;    
 }
-.pop-up span{
+.window span{
     color: #989898;    
 }
-/* pop-up prices */
-.pop-up-prices{
+/* window prices */
+.window-prices{
     width: 100%;    
     margin-bottom: 20px;
     border-collapse: collapse;
     text-transform: uppercase;    
 }
-.pop-up-prices th{
+.window-prices th{
     height: 28px;
     text-align: right;
     font-size: 14px;
@@ -859,34 +882,34 @@ input:checked + span{
     vertical-align: middle;
     background: #334450;
 }
-.pop-up-prices th b{
+.window-prices th b{
     margin-left: 4px;
 }
-.pop-up-prices th b.pop-up-th-blue{
+.window-prices th b.window-th-blue{
     color: #44cdff;
 }
-.pop-up-prices tbody tr{
+.window-prices tbody tr{
     background: #FFF;
     border-bottom: 1px solid #e3e4e4;
 }
-.pop-up-prices th:first-child{
+.window-prices th:first-child{
     width: 175px;
 } 
-.pop-up-prices .pop-up-prices-last{
+.window-prices .window-prices-last{
     padding-right: 20px;
 } 
-.pop-up-prices tr td:first-child{
+.window-prices tr td:first-child{
     color: #989898;
     font-size: 10px; 
     text-align: left; 
     padding-left: 20px;
 	font-weight: normal;  
 }
-.pop-up-prices tr:last-child td{
+.window-prices tr:last-child td{
     color: #989898;    
     font-weight: normal;
 }
-.pop-up-prices td{
+.window-prices td{
     height: 31px;
     color: #333;
     font-size: 13px;
@@ -894,31 +917,31 @@ input:checked + span{
     text-align: right;
     vertical-align: middle;
 }
-.pop-up-prices td span{
+.window-prices td span{
     color: #989898;
     margin-right: 4px;
     font-weight: normal;
 }
-/* pop-up expand */
-.pop-up-expand{
+/* window expand */
+.window-expand{
     padding-left: 20px;
     margin-bottom: 15px;
     font-size: 11px;
 }
-.pop-up-expand a{
+.window-expand a{
     margin-left: 9px;
 }
-/* pop-up log */
-.pop-up-log{
+/* window log */
+.window-log{
    margin-bottom: 35px; 
 }
-.pop-up-log table{
+.window-log table{
     width: 100%;    
     font-size: 13px;
     margin-top: 34px;
     border-collapse: collapse;    
 }
-.pop-up-log thead th{
+.window-log thead th{
     padding:10px 0 8px;
     color: #989898;
     font-size: 10px;
@@ -927,53 +950,53 @@ input:checked + span{
     text-transform: uppercase;
     border-bottom: 1px solid #e3e4e4;
 }
-.pop-up-log thead th:first-child{
+.window-log thead th:first-child{
     padding-left: 20px;
     width: 200px;
 }
-.pop-up-log td{
+.window-log td{
     height: 24px;
 }
-.pop-up-log td:first-child{
+.window-log td:first-child{
     padding-left: 20px;
     width: 200px;
     color: #989898;
 }
-.pop-up-log td.pop-up-log-first{
+.window-log td.pop-up-log-first{
     padding-top: 18px;    
 }
-.pop-up-log td a{
+.window-log td a{
     margin-right: 4px;
 }
-.pop-up-log > p{
+.window-log > p{
     color: #333;
     font-size: 11px;
     line-height: 14px;
     padding: 8px 20px 0px 20px;
     *padding-top: 10px;
 }
-.pop-up-log > p a{
+.window-log > p a{
     display: block;
     margin-top: 9px;
     text-align: right;
 }
 /* pop-up result */
-.pop-up-result{
+.window-result{
     margin-bottom: 20px;
     padding: 3px 20px 10px;
     font-size: 13px;
     line-height: 13px;
     position: relative;
 }
-.pop-up-result p{
+.window-result p{
     line-height: 12px;
     margin: 0 0 7px 0;
     padding-right: 160px;
 }
-.pop-up-result a{
+.window-result a{
     margin: 0 4px;
 }
-.pop-up-result .search-add{
+.window-result .search-add{
     display: block;
     color: #FFF;
     font-size: 10px;
@@ -984,5 +1007,27 @@ input:checked + span{
     right: 25px;
     float: none;   
 }
+
+/* search_mode popup */
+#search_mode {
+	width:358px;
+	margin-left: -179px; 
+	line-height: 27px;
+	color:#333;
+	
+}
+#search_mode div {
+	padding: 15px 20px 20px;
+}
+
+#search_mode label {
+	
+}
+#search_mode .button{
+	margin:10px 0 0 100px
+}
+
+/* end search_mode popup */
+
 /* End Pop-Up
 --------------------------------------------------------------------------------------------------------*/
