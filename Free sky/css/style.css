@@ -112,7 +112,7 @@ body {
     height: 19px;
     margin: 0 6px;
     vertical-align: middle;
-    background: url(../img/icons/search-option.jpg) no-repeat;    
+    background: url(../img/icons.png) no-repeat -20px -20px;    
 }
 /* search direction */
 #search .direction div{    
@@ -150,7 +150,7 @@ body {
     width: 70px;
     font-size: 13px;
     padding: 0 10px 0 30px;
-    background: #FFF url(../img/icons/search-date.jpg) no-repeat 6px 4px;    
+    background: #FFF url(../img/icons.png) no-repeat -75px 4px;    
 }
 /* search options */
 #search .options{
@@ -208,7 +208,7 @@ body {
     *position: relative;
     *top: -3px;
     margin-left: 17px;
-    background: url(../img/icons/search-close.png) no-repeat;    
+    background: url(../img/icons.png) no-repeat -20px 0;    
 }
 /* searh and add button */
 #search .search-add{
@@ -334,7 +334,7 @@ body {
     background-position: 0 -111px;
 }
 
-/* MAIN */
+/* MAIN --------------------------------------------------- */
 #main{
     position: relative;
     margin-top: 60px;
@@ -393,14 +393,14 @@ body {
     left: 100%;
     background: url(../img/tabs.png) no-repeat 0 -60px;
 }
-#main #tabs li .active{
+#main #tabs li.active a{
     color: #fff;
     background-position: 0 -120px;    
 }
-#main #tabs li .active span{
+#main #tabs li.active a  span{
     background-position: 0 -90px;    
 }
-#main #tabs li .active span ~ span{
+#main #tabs li.active a  span ~ span{
     background-position: 0 -150px;    
 }
 #main #tabs li a b{
@@ -415,7 +415,10 @@ body {
     *position: relative;
     *top: -3px;
     *left: 3px;
-    background: url(../img/icons/tab-arrow.png) no-repeat;    
+    background: url(../img/icons.png) no-repeat -20px -40px;    
+}
+#main #tabs li.active a u {
+	background-position:-40px -40px;  
 }
 #main #tabs li .tab-close{
     width: 9px;
@@ -425,7 +428,7 @@ body {
     right: 8px;
     z-index: 1;
     cursor: pointer;
-    background: url(../img/icons/tab-close.png) no-repeat 0 0;
+    background: url(../img/icons.png) no-repeat -40px 0;
 }
 /* FILTERS */
 #main #filters{
@@ -459,21 +462,21 @@ body {
     margin-right: 8px;
     text-transform: uppercase;
 }
-#main #filters label input{
+input[type="radio"]{
     visibility: hidden;
     margin: 0;
     padding: 0;
 }
-#main #filters label input + span{
+input[type="radio"] + span{
     width: 14px;
     height: 14px;
     margin: 0 4px 0 -14px;
     display: inline-block;
     vertical-align: bottom;
-    background: url(../img/icons/radio.png) no-repeat;
+    background: url(../img/icons.png) no-repeat;
 }
-#main #filters label input:checked + span{
-    background-position: 0 -14px;
+input:checked + span{
+    background-position: 0 -20px;
 }
 #main #filters > div{
     clear: both;
@@ -594,7 +597,7 @@ body {
     line-height: 13px;
     vertical-align: middle;
     display: inline-block;
-    background: url(../img/icons/result-arrow.png) no-repeat;    
+    background: url(../img/icons.png) no-repeat 0 -40px;    
 }
 /* result flight */
 #result .flight{
@@ -705,10 +708,10 @@ body {
     margin: 0 0 0 -14px;
     display: inline-block;
     vertical-align: bottom;
-    background: url(../img/icons/radio.png) no-repeat;
+    background: url(../img/icons.png) no-repeat;
 }
 #result .check input:checked + span{
-    background-position: 0 -14px;
+    background-position: 0 -20px;
 }
 /* result price */
 #result .price{
@@ -876,7 +879,8 @@ body {
     color: #989898;
     font-size: 10px; 
     text-align: left; 
-    padding-left: 20px;  
+    padding-left: 20px;
+	font-weight: normal;  
 }
 .pop-up-prices tr:last-child td{
     color: #989898;    
