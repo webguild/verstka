@@ -16,6 +16,7 @@
     </div>
     <!-- end header -->
         
+       
     <!-- start content -->
     <div id="content">
         <!-- start search -->
@@ -25,42 +26,42 @@
                     <span>1.</span>
                     <!-- start direction -->
                     <div class="direction">
-                        <div><b>Moscow</b>, Russia<span>mow</span></div>
-                        <div><b>Belin</b>, Germany<span>ber</span></div>
-                        <div class="direction-date">2012-10-18</div>
+                        <div class="dropdown"><b>Moscow</b>, Russia<span>mow</span></div>
+                        <div class="dropdown"><b>Belin</b>, Germany<span>ber</span></div>
+                        <input type="text" class="date" value="2012-10-18" />
                     </div>
                     <!-- end direction -->
                     <a href="#" class="check"></a>
                     <!-- start options -->
                     <div class="options">
                         <span>класс</span>
-                        <a href="#" class="first">y<span></span><span></span></a>
-                        <a href="#" class="active">b<span></span><span></span></a>
-                        <a href="#" class="active">f<span></span><span></span></a>                        
+                        <a href="#" class="button small">y<span></span><span></span></a>
+                        <a href="#" class="button small active">b<span></span><span></span></a>
+                        <a href="#" class="button small active">f<span></span><span></span></a>                        
                     </div>
                     <!-- end options --> 
                     <a href="#" class="close"></a>
                 </li>  
                 <li>
-                     <span>2.</span>
+                    <span>2.</span>
                     <!-- start direction -->
                     <div class="direction">
-                        <div><b>Moscow</b>, Russia<span>mow</span></div>
-                        <div><b>Belin</b>, Germany<span>ber</span></div>
-                        <div class="direction-date">2012-10-10</div>
+                        <div class="dropdown">ОТКУДА </div>
+                        <div class="dropdown">КУДА</div>
+                        <input type="text" class="date" value="2012-10-18" />
                     </div>
                     <!-- end direction -->
-                     <a href="#" class="check"></a>
+                    <a href="#" class="check"></a>
                     <!-- start options -->
                     <div class="options">
                         <span>класс</span>
-                        <a href="#" class="active first">y<span></span><span></span></a>
-                        <a href="#">b<span></span><span></span></a>
-                        <a href="#" class="active">f<span></span><span></span></a>                        
+                        <a href="#" class="button small">y<span></span><span></span></a>
+                        <a href="#" class="button small active">b<span></span><span></span></a>
+                        <a href="#" class="button small active">f<span></span><span></span></a>                        
                     </div>
                     <!-- end options --> 
-                    <a href="#" class="close"></a> 
-                    <a href="#"  class="search-add">добавить<span></span><span></span></a>
+                    <a href="#" class="close"></a>
+                    <a href="#"  class="add button">добавить<span></span><span></span></a>
                 </li>  
             </ul>
             
@@ -68,22 +69,22 @@
             <div>
                 <div>
                     <span>рсс</span>
-                    <a href="#" class="button active first">Выбрать автоматически<span></span><span></span></a>
-                    <a href="#" class="button">Указать вручную<span></span><span></span></a>     
+                    <a href="#" class="button smallalt active">Выбрать автоматически<span></span><span></span></a>
+                    <a href="#" class="button smallalt">Указать вручную<span></span><span></span></a>     
                 </div>
                 <div class="second">
                     <span>валюта</span>
-                    <a href="#" class="button first">rub<span></span><span></span></a>
-                    <a href="#" class="button active">eur<span></span><span></span></a>
-                    <a href="#" class="button active">usd<span></span><span></span></a>
-                    <a href="#" class="button active">uan<span></span><span></span></a> 
+                    <a href="#" class="button smallalt">rub<span></span><span></span></a>
+                    <a href="#" class="button smallalt active">eur<span></span><span></span></a>
+                    <a href="#" class="button smallalt active">usd<span></span><span></span></a>
+                    <a href="#" class="button smallalt active">uan<span></span><span></span></a> 
                 </div>
                 <div class="last">
                     <span>кеш</span>
-                    <a href="#" class="button">Вкл<span></span><span></span></a>
-                    <a href="#" class="button active">Выкл<span></span><span></span></a>
+                    <a href="#" class="button smallalt">Вкл<span></span><span></span></a>
+                    <a href="#" class="button smallalt active">Выкл<span></span><span></span></a>
                 </div>
-                <a href="#" class="search-add active">искать<span></span><span></span></a>
+                <a href="#" class="add button blue">искать<span></span><span></span></a>
             </div>
             <!-- end currency -->    
         </div>
@@ -92,14 +93,12 @@
         <!-- start main -->
         <div id="main" class="block">
             <!-- start tabs -->
-            <ul id="tabs">
-                <li class="active">
-                    <a href="#"><b>mow <u></u> ber</b>18/10/12<span></span><span></span></a>
-                    <span class="tab-close"></span>
+            <ul class="tabs">
+                <li class="active"><span></span><span></span>
+                    <a href="#"><b>mow <u></u> ber</b>18/10/12 <span class="close"></span></a>
                 </li>
-                <li>
-                    <a href="#"><b>mow <u></u> ber</b>18/10/12<span></span><span></span></a>
-                    <span class="tab-close"></span>
+                <li><span></span><span></span>
+                    <a href="#"><b>mow <u></u> ber</b>18/10/12 <span class="close"></span></a>
                 </li>
             </ul>
             <!-- end tabs -->
@@ -164,15 +163,6 @@
                                         <td class="class">t</td>
                                         <td class="board">trj</td>
                                     </tr>
-                                     <tr>
-                                        <td class="airport"><span>3.</span>msq<u></u>sfx</td>
-                                        <td class="departure">12:55</td>
-                                        <td class="duration">80 <span>m</span></td>
-                                        <td class="arrival">13:45</td>
-                                        <td class="number">891</td>
-                                        <td class="class">t</td>
-                                        <td class="board">trj</td>
-                                    </tr>
                                 </table>                             
                                 <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
                             </li>
@@ -197,30 +187,21 @@
                                         <td class="class">w</td>
                                         <td class="board">trj</td>
                                     </tr>
-                                    <tr>
-                                        <td class="airport"><span>3.</span>sfx<u></u>msq</td>
-                                        <td class="departure">14:48</td>
-                                        <td class="duration">180 <span>m</span></td>
-                                        <td class="arrival">13:45</td>
-                                        <td class="number">891</td>
-                                        <td class="class">w</td>
-                                        <td class="board">trj</td>
-                                    </tr>
                                 </table>                             
                                 <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
                             </li>                     
                         </ul>
                         <div class="price"><strong>120 004.00</strong>9 935.00<a href="#">Подробно</a></div>
-                        <div class="reservation"><a href="#" class="search-add active">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
+                        <div class="reservation"><a href="#" class="button blue">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
                     </li>                    
-                    <li class="active">
-                        <div class="flight"><h4><b>su</b>47kn</h4>Любые рейсы</div>                    
+                     <li>
+                        <div class="flight"><h4><b>b2</b>39kn</h4>Любые рейсы</div>                    
                         <ul>
                             <li>
-                                <div class="flight-city">syd<u></u>ber</div>
+                                <div class="flight-city">mow<u></u>ber</div>
                                 <table>
                                     <tr>
-                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="airport"><span></span>dme<u></u>msq</td>
                                         <td class="departure">10:15</td>
                                         <td class="duration">80 <span>m</span></td>
                                         <td class="arrival">10:35</td>
@@ -228,6 +209,7 @@
                                         <td class="class">t</td>
                                         <td class="board">733</td>
                                     </tr>
+                                    
                                 </table>                             
                                 <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
                             </li>
@@ -235,7 +217,7 @@
                                 <div class="flight-city">ber<u></u>mow</div>
                                 <table>
                                     <tr>
-                                        <td class="airport"><span>1.</span>dme<u></u>msq</td>
+                                        <td class="airport"><span> </span>dme<u></u>msq</td>
                                         <td class="departure">13:45</td>
                                         <td class="duration">80 <span>m</span></td>
                                         <td class="arrival">22:35</td>
@@ -243,13 +225,14 @@
                                         <td class="class">w</td>
                                         <td class="board">733</td>
                                     </tr>
+                                    
                                 </table>                             
                                 <div class="check"><label><input type="radio" name="result"/><span></span></label></div>
                             </li>                     
                         </ul>
-                        <div class="price"><strong>8 478.00</strong>5 735.00<a href="#">Подробно</a></div>
-                        <div class="reservation"><a href="#" class="search-add active">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
-                    </li>
+                        <div class="price"><strong>120 004.00</strong>9 935.00<a href="#">Подробно</a></div>
+                        <div class="reservation"><a href="#" class="button blue">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
+                    </li> 
                     <li>
                         <div class="flight"><h4><b>su</b>kj64</h4>Любые рейсы</div>                    
                         <ul>
@@ -327,7 +310,7 @@
                             </li>                      
                         </ul>
                         <div class="price"><strong>98 051.00</strong>9 935.00<a href="#">Подробно</a></div>
-                        <div class="reservation"><a href="#" class="search-add active">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
+                        <div class="reservation"><a href="#" class="button blue">Забронировать<span></span><span></span></a><a href="#">Правила тарифа</a></div>
                     </li>
                 </ul>
                 <!-- end result body -->
