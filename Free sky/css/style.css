@@ -81,11 +81,6 @@ body {
 /* SEARCH */
 #search{    
     *margin-top: -64px;    
-    box-shadow: 0 0 3px 2px #a6a7a8;
-    -webkit-box-shadow: 0 0 3px 2px #a6a7a8;
-    -o-box-shadow: 0 0 3px 2px #a6a7a8;
-    -moz-box-shadow: 0 0 3px 2px #a6a7a8;
-    -ms-box-shadow: 0 0 3px 2px #a6a7a8;    
 }
 #search ul{
     padding: 0; 
@@ -194,11 +189,6 @@ body {
 #main{
     position: relative;
     margin-top: 60px;
-     box-shadow: 0 0 3px 2px #a6a7a8;
-    -webkit-box-shadow: 0 0 3px 2px #a6a7a8;
-    -o-box-shadow: 0 0 3px 2px #a6a7a8;
-    -moz-box-shadow: 0 0 3px 2px #a6a7a8;
-    -ms-box-shadow: 0 0 3px 2px #a6a7a8; 
 }
 /* TABS */
 #main .tabs{
@@ -321,6 +311,7 @@ body {
     padding: 10px 0 13px 0;
     vertical-align: middle;
     border-top: 1px solid #dbdcde;
+	
 }
 #result > #results > .active{
     background: #e1f3fa;
@@ -463,18 +454,18 @@ body {
     position: relative;    
 }
 #result .check label input{
-    visibility: hidden;
     margin: 0;
     padding: 0;
 	vertical-align: middle;
 }
 #result .check  input + span{
-   margin: 0 0 0 -14px;
-   top:0;
+   	margin: 0 0 0 -14px;
+   	top:0;
 }
-#result .check input:checked + span{
-    background-position: 0 -20px;
+*+html #result .check  input + span {
+	left:-15px;
 }
+
 /* result price */
 #result .price{
     width: 132px;
@@ -522,6 +513,306 @@ body {
 	width: auto;
 }
 
+/* Booking */
+#booking {
+	margin-top:60px;
+	position: relative;
+	
+}
+	#booking .tabs {
+		position: absolute;left:0;
+		bottom:100%;
+	}
+
+	#booking .controls {
+		padding:20px 25px 19px;
+	}
+	
+		#booking .controls .button{
+			font-size:10px;
+			margin-right: 15px;
+			padding: 0 7px;
+		}
+	
+/* Flight details */
+
+		
+.list h2 {
+	text-transform: uppercase;
+	color:#333;
+	font: bold 12px Arial;
+	padding:22px 20px 11px;
+	background: #fff;
+}
+
+	.list .head{
+		border:1px solid #e3e4e4;
+		border-width: 1px 0;
+		background:#fff;
+		padding-left:20px;
+		overflow: hidden;
+	}
+		.list .head li {
+			height:31px;
+			float: left;
+			line-height:31px;
+			font-size:10px;
+			font-weight: normal;
+			color:#989898;
+			text-transform: uppercase;
+		}
+	.list dl {
+		background:#f5f5f6;
+		border-bottom: 1px solid #e3e4e4;
+		position: relative;
+	
+	}
+		.list dd {
+			border-top: 1px solid #e3e4e4;
+		}
+		
+		.list dd:first-child {
+			border: 0;
+		}
+		
+			.list dd ul {
+				zoom:1;
+			}
+			.list dd ul:after {
+				clear: both;
+				display: block;
+				height:0;
+				visibility: hidden;
+				content:' ';
+			}
+				.list dd li {
+					height:36px;
+					line-height:36px;
+					font-size:13px;
+					color:#333;
+					float: left;
+				}
+
+.fligth {
+	border-top:1px solid #e3e4e4;
+}
+	
+.fligth .code {	width: 101px; }
+.fligth .type {	width: 40px; }
+.fligth .quant { width: 60px; text-align: center;}
+.fligth .tarif { width: 75px; text-align: right;}
+.fligth .taxes { width: 85px; text-align: right;}
+.fligth .price { width: 85px; padding-right: 10px; text-align: right;}
+.fligth .commission { width: 100px; text-align: center;}
+.fligth .agent_pay { width: 92px; text-align: right;}
+.fligth .ca_pay { width: 138px; text-align: right;}
+.fligth .total { width: 115px; text-align: right;}
+
+.fligth .head li.agent_pay { width:136px; 	}
+.fligth .head li.ca_pay { width:126px; 	}
+.fligth .head li.total { width:83px; 	}
+
+.fligth dd li.type {
+	font-size:11px;
+}		
+.fligth dd li.quant,	
+.fligth dd li.tarif,	
+.fligth dd li.total	{
+	
+	font-weight: bold;
+}
+.fligth dd li.taxes,	
+.fligth dd li.commission,	
+.fligth dd li.price	{
+	color:#989898;
+}
+		.fligth dd {
+			margin-left: 120px;
+		}
+				
+		.fligth dt {
+			position: absolute;
+			height: 100%;
+			width: 115px;
+			top:0;
+			left:0;
+			text-align: center;
+			color:#333;
+			font-size: 13px;
+		}
+		
+		.fligth dt > b {
+			font-size: 18px;
+		}
+		
+		.fligth dt strong {
+			display: inline-block;
+			background:#334450;
+			font-size:14px;
+			color: #fff;
+			margin: 36px 0 5px;
+			padding:4px 8px 3px
+			
+		}
+			.fligth dt strong b {
+				color: #44cdff;
+			}
+			
+	.fligth p.total {
+		background: #323e46;
+		text-align: right;
+		color: #fff;
+		font-size: 15px;
+		width: auto;
+		padding: 11px 20px;
+		
+	}
+		.fligth p.total strong {
+			font-size: 18px;
+		}
+
+/* Passengers details */
+.passengers {
+	padding: 10px 0 30px;
+	background: white;
+}
+
+.passengers .type {	width:24px;}
+.passengers .lastname {	width:100px;}
+.passengers .firstname { width:100px;}
+.passengers .gender { width:15px; text-align: center;}
+.passengers .birthdate { width:65px;}
+.passengers .extdate { width:65px;}
+.passengers .doc { width:60px;}
+.passengers .birthdate { width:65px;}
+.passengers .tarif { width:55px;}
+.passengers .recloc { width:50px;}
+.passengers .ticket { width:85px;}
+.passengers .place { width:30px;}
+.passengers .control { width:32px; margin:0; text-align: right; padding:0}
+
+.passengers dd {
+	padding-left:19px;
+}
+.passengers dd.active {
+	background:#e1f3fa;
+}
+.passengers .head li {
+	margin-right:20px;
+	white-space: nowrap;
+	text-indent: 5px;
+	position: relative;
+}
+.passengers dd li {
+	margin-right:10px;
+	font-size:11px;
+	text-transform: uppercase;
+	padding: 0 5px; 
+	position: relative;
+}
+
+.passengers li.lastname,
+.passengers li.firstname,
+.passengers li.gender,
+.passengers li.tarif { font-weight: bold;}
+
+.passengers li.extdate,
+.passengers li.birthdate { color:#989898;}
+
+.passengers dd input {
+	border: 1px solid #d3d3d3;
+	width: 100%;
+	font-size:10px;
+	text-transform: uppercase;
+	padding: 0 5px;
+	height:28px;
+	line-height:28px;
+	color:#989898;
+	width:100%;
+	margin-left:-5px;
+	vertical-align: baseline;
+	background: #fff;
+	
+}
+.passengers dd.active input {
+	border-color:#b2c2cd;
+	color:#333;
+	font-weight: bold;
+	font-size:11px;
+}
+
+.passengers .gender input{ text-align: center;}
+
+.passengers dd .invalid input {
+	background:#ffeded;
+	border:1px solid #fdbbbb;
+	color:#cf2020;
+	font-size:10px;
+	font-weight: normal;
+}
+.passengers .error {
+	color:#fff;
+	background:#ee5f5f;
+	position: absolute;
+	top:42px;
+	left: -3px;
+	z-index:10;
+	font-size:11px;
+	white-space: nowrap;
+	text-transform: none;
+	padding: 0 5px;
+	line-height:20px;
+	display:none;
+}
+.passengers .error_dec {
+	background: url(../img/icons.png) -40px -15px;
+	position: absolute;
+	top: 37px;
+	left:50%;
+	margin-left:-3px;
+	height:5px;
+	width:10px;
+	z-index:10;
+	display:none;
+}
+.passengers .invalid .error, .passengers .invalid .error_dec {
+	display:block;
+}
+.passengers li .edit, .passengers li .delete {
+	height:13px;
+	width:10px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/icons.png) no-repeat -60px -25px;
+	
+}
+
+.passengers li .delete {
+	background-position:-80px -25px;
+	margin-left: 7px;
+}
+.passengers .active .edit{
+	background-position:-60px -40px;
+}
+.passengers .active .delete{
+	background-position:-80px -40px;
+}
+
+.loader {
+	display: inline-block;
+	height:18px;
+	width:18px;
+	background: url(../img/icons.png) no-repeat -53px 0;
+	vertical-align: middle;
+}
+
+.passengers dd.active.loading input {
+	color:#8796a1;
+	background:#edf7fb;
+}
+.passengers dd.active.loading .recloc {
+	text-align: center;
+}
 /* End Middle
 --------------------------------------------------------------------------------------------------------*/
 
@@ -565,10 +856,13 @@ input[type="text"] {
 }
 
 input[type="radio"] {
-    visibility: hidden;
+    opacity:0;
     margin: 0;
     padding: 0;
 	vertical-align: middle;
+}
+*+html input[type="radio"] {
+	filter:alpha(opacity=0);
 }
 input[type="radio"] + span {
     width: 14px;
@@ -580,18 +874,33 @@ input[type="radio"] + span {
 	position: relative;
 	top:-2px;
 }
-input:checked + span{
+input[type="radio"]:checked + span{
+    background-position: 0 -20px;
+}
+input[type="radio"].checked + span{
     background-position: 0 -20px;
 }
 
 input.date{
     width: 70px;
+	line-height:28px;
     font-size: 13px;
-    padding: 0 10px 0 30px;
+    padding: 0 13px 0 30px;
     background: #FFF url(../img/icons.png) no-repeat -75px 4px;
 }
 
 /* Buttons (links) --------------------------------------------------*/
+
+/* Blocks */
+.block {
+	background:#eff0f1;
+	box-shadow: 0 0 3px 2px #A6A7A8;
+	-webkit-box-shadow: 0 0 3px 2px #A6A7A8;
+	-o-box-shadow: 0 0 3px 2px #a6a7a8;
+	-moz-box-shadow: 0 0 3px 2px #a6a7a8;
+	-ms-box-shadow: 0 0 3px 2px #a6a7a8;
+}
+
 /* Button */
 .button {
 	height: 30px;
@@ -606,23 +915,38 @@ input.date{
 	background: url(../img/bgs.png) repeat-x 0 -335px;
 	display: inline-block;
 	color:#fff !important;
+	cursor: pointer;
 }
 
-.button span {
-	height: inherit;
-	margin: 0 !important;
-	padding: 0 !important;
-	position: absolute;
-	width: 5px;
-	right: 100%;
-	top: 0;
-	background: url(../img/bgs.png) 0 -300px;
+	.button span {
+		height: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+		position: absolute;
+		width: 5px;
+		right: 100%;
+		top: 0;
+		background: url(../img/bgs.png) 0 -300px;
+	}
+
+	.button span ~ span {
+		left: 100%;
+		background-position: 0 -370px;
+	}
+
+.button.active {
+	background-position: 0 -785px;
+	color:#333 !important;
 }
 
-.button span ~ span {
-	left: 100%;
-	background-position: 0 -370px;
-}
+	.button.active span {
+		background-position: 0 -750px;
+	}
+	
+	.button.active span ~ span {
+		background-position: 0 -820px;
+	}
+
 .button.blue {
 	background-position: 0 -440px;
 }
@@ -661,7 +985,7 @@ input.date{
 .button.small.active span ~ span{
     background-position: -2px -125px;
 }
-
+/* Alt Button Small */
 .button.smallalt {
 	height:23px;
 	line-height: 23px;
@@ -693,6 +1017,9 @@ input.date{
 }
 
 /* Tabs ---------------------*/
+*+html .tabs{
+	zoom:1;
+}
 .tabs:after {
 	display: block;
 	content:' ';
@@ -710,7 +1037,7 @@ input.date{
 }
 .tabs li > span {
 	position: absolute;
-	height: inherit;
+	height: 100%;
 	top:0;
 	right:100%;
 	width:5px;
@@ -737,12 +1064,9 @@ input.date{
     width: 16px;
     margin: 0 1px;
 	display: inline-block;
-    /**padding-right: 3px;*/
     height: 9px;
-    *position: relative;
-    /**top: -3px;*/
-    /**left: 3px;*/
     background: url(../img/icons.png) no-repeat -20px -40px;    
+	vertical-align: middle;
 }
 .tabs li.active {
 	background-position:0 -650px; 
