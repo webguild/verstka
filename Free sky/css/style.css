@@ -28,6 +28,9 @@ body{
     margin: 0 auto;
     padding: 0 20px;  
 }
+a:hover {
+	text-decoration: none;
+}
 /* End General
 --------------------------------------------------------------------------------------------------------*/        
 
@@ -669,7 +672,7 @@ p.total {
 	text-align: right;
 	color: #fff;
 	font-size: 15px;
-	width: auto;
+	width: auto !important;
 	padding: 11px 20px;
 	
 }
@@ -691,10 +694,10 @@ p.total strong {
 .passengers .extdate { width:65px;}
 .passengers .doc { width:60px;}
 .passengers .birthdate { width:65px;}
-.passengers .tarif { width:55px;}
-.passengers .recloc { width:50px;}
+.passengers .tarif { width:52px;}
+.passengers .recloc { width:37px;}
 .passengers .ticket { width:85px;}
-.passengers .place { width:30px;}
+.passengers .place { width:47px; text-align: center;}
 .passengers .control { width:32px; margin:0; text-align: right; padding:0}
 
 .passengers dd {
@@ -818,6 +821,11 @@ p.total strong {
 }
 .passengers dd.active.loading .recloc {
 	text-align: center;
+}
+
+.passengers .place .button {
+	margin-left:-12px;
+	min-width:60px;
 }
 
 /* Table */
@@ -1461,6 +1469,59 @@ select {
 }
 .window span{
     color: #989898;    
+}
+
+.alert {
+	position: absolute;
+	background:#fcf6da;
+	font-size:13px;
+	line-height:18px;
+	color:#333;
+	z-index:100;
+	width:360px;
+	left:50%;
+	margin-left:-180px;
+	padding-bottom:15px;
+	box-shadow:rgba(0,0,0, 0.3) 0 0 8px;
+}
+.alert.error {
+	background:#f9e7e7;
+}
+.alert.saccess {
+	background:#e9f8e0;
+}
+.alert h2 {
+	background:#e7be00;
+	height:30px;
+	line-height:30px;
+	text-transform: uppercase;
+	font-size:14px;
+	position: relative;
+	color:#fff;
+	font-weight: normal;
+	padding:0 20px;
+}
+.alert.error h2 {
+	background:#be442c;
+}
+.alert.saccess h2 {
+	background:#2e7600;
+}
+.alert .close {
+	position: absolute; 
+	top: 10px;
+	right:10px;
+	height:9px;
+	width: 9px;
+	cursor: pointer;
+	background:url(../img/icons.png) -40px 0;
+}
+.alert p {
+	padding:15px 20px 0;
+	
+}
+.alert p a {
+	color:#008fc4;
 }
 /* window prices */
 .window-prices{

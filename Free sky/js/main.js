@@ -14,9 +14,17 @@ jQuery(function() {
 				$('body').height('auto');
 			}
 		});
+		
+		$('input[type="checkbox"]').click(function(event) {
+			$this = $(this);
+			$this.toggleClass('checked').parent().hide().show();
+		}).each(function() {
+			$this = $(this);
+			if($this.is(':checked')) {
+				$this.addClass('checked');
+				$('body').height('auto');
+			}
+		});
 	} 
 	
-	/*if ($.browser.msie && $.browser.version < 8) {
-		$('.button').append('<span/><span/>');
-	}*/
 });
