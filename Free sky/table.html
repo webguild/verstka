@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Free sky</title>
+    <meta charset="utf-8" /> 
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>  
+	<script type="text/javascript" src="js/libs/jquery-1.8.2.min.js"></script> 
+	<script type="text/javascript" src="js/main.js"></script> 
+</head>
+<body>
+<!-- start wrap -->
+<div class="wrap">
+    <!-- start header -->
+    <div id="header">
+        <a id="logo" href="#"></a>
+        <div id="log-out">Konstantin Sidorov<a href="#">Выйти</a></div>
+        <div class="clear"></div>
+    </div>
+    <!-- end header -->
+        
+    <!-- start content -->
+    <div id="content">
+		
+      	<div id="tables" class="block">
+	  		<h1>Таблицы номер один и два</h1>
+			
+			<!-- start search -->
+			<div class="search">
+				<input type="text" name="city" value="город" /> 
+				c
+				<input type="text" name="date[0]" value="2012–10–18" class="date" />
+				по 
+				<input type="text" name="date[1]" value="2012–10–18" class="date" /> 
+				<select name="company">
+					<option>Выбрать авиакомпанию</option>
+				</select> 
+				<label><input type="checkbox" name="oneside" /><span></span> В одну сторону</label>
+				<br />
+				<label><input type="radio" name="change" value="0"/><span></span> Прямые</label>
+				<label><input type="radio" name="change" value="1"/><span></span> Одна пересадка</label>
+				<label><input type="radio" name="change" value="2+"/><span></span> Две и более пересадок</label>
+				<a href="" class="button blue">Фильтр<span></span><span></span></a>
+			</div>
+			<!-- end search -->
+			
+			<!-- start flights -->
+			<div class="list flights">
+				<div class="controls">
+					<a class="button small" href=""> <u class="delete"></u>Удалить<span></span><span></span></a>
+					<a class="button small" href=""> <u class="edit"></u>Редактировать<span></span><span></span></a>
+				</div>
+				<ul class="head">
+					<li class="check"><u class="checking"></u></li>
+					<li class="when active">Когда найден <u class="filter up"></u></li>
+					<li class="from">Откуда</li>
+					<li class="to">Куда</li>
+					<li class="price filter">Цена, RUB<u class="filter up"></u></li>
+					<li class="per_km filter">Цена за км, RUB <u class="filter down"></u></li>
+				</ul>
+				<dl>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">меньше 1 минуты</li>
+							<li class="from">Санкт-Петербург</li>
+							<li class="to colactive">Москва</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.3 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">11 минут</li>
+							<li class="from">Москва</li>
+							<li class="to colactive">Санкт-Петербург</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.29 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">меньше 1 минуты</li>
+							<li class="from">Санкт-Петербург</li>
+							<li class="to colactive">Москва</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.3 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">11 минут</li>
+							<li class="from">Москва</li>
+							<li class="to colactive active">Санкт-Петербург</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.29 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">меньше 1 минуты</li>
+							<li class="from">Санкт-Петербург</li>
+							<li class="to colactive">Москва</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.3 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">11 минут</li>
+							<li class="from">Москва</li>
+							<li class="to colactive">Санкт-Петербург</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.29 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">меньше 1 минуты</li>
+							<li class="from">Санкт-Петербург</li>
+							<li class="to colactive">Москва</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.3 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">11 минут</li>
+							<li class="from">Москва</li>
+							<li class="to colactive">Санкт-Петербург</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.29 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">меньше 1 минуты</li>
+							<li class="from">Санкт-Петербург</li>
+							<li class="to colactive">Москва</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.3 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="when">11 минут</li>
+							<li class="from">Москва</li>
+							<li class="to colactive">Санкт-Петербург</li>
+							<li class="price">3 994.00</li>
+							<li class="per_km">6.29 <a href="">Подробнее</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<p class="total"> Итого <strong>109 493.00</strong></p>
+			</div>
+			<!-- end flights -->
+			
+			<!-- start flights details-->
+			<div class="list flights details">
+				<div class="controls">
+					<a class="button small active" href=""> <u class="delete"></u>Удалить<span></span><span></span></a>
+					<a class="button small active" href=""> <u class="edit"></u>Редактировать<span></span><span></span></a>
+				</div>
+				<ul class="head">
+					<li class="check"><u class="checking"></u></li>
+					<li class="trip">Рейс</li>
+					<li class="date active">дата <u class="filter up"></u></li>
+					<li class="from">Откуда</li>
+					<li class="to">куда</li>
+					<li class="time_from filter">время <u class="filter down"></u></li>
+					<li class="time_to filter">время <u class="filter down"></u></li>
+					<li class="interval filter">интервал <u class="filter down"></u></li>
+					<li class="price filter">цена, RUB <u class="filter down"></u></li>
+					<li class="coef filter">коэфф. <u class="filter down"></u></li>
+					<li class="pales">Места</li>
+					<li class="numb filter">Число <u class="filter down"></u></li>
+					<li class="totals filter">сумма, RUB <u class="filter down"></u></li>
+					<li class="per_km filter">цена за км, rub <u class="filter down"></u></li>
+					<li class="tarif">Тариф</li>
+				</ul>
+				<dl>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd class="active">
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to active">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+					<dd>
+						<ul>
+							<li class="check"><label><input type="checkbox" name="" /><span></span></label></li>
+							<li class="trip">SU</li>
+							<li class="date">01/10/12</li>
+							<li class="from">MOW</li>
+							<li class="to">BER</li>
+							<li class="time_from">04:20</li>
+							<li class="time_to">06:20</li>
+							<li class="interval">01 – 02</li>
+							<li class="price">3 994.00</li>
+							<li class="coef"><a href="">6.3</a></li>
+							<li class="pales">есть</li>
+							<li class="numb">6.3</li>
+							<li class="totals">3 994.00</li>
+							<li class="per_km">6.3</li>
+							<li class="tarif">b2234</li>
+						</ul>
+					</dd>
+				</dl>
+				<p class="total"> Итого <strong>109 493.00</strong></p>
+			</div>
+			<!-- end flights details -->
+			
+	 	</div>
+    </div>
+    <!-- end content -->
+         
+    <!-- start footer --> 
+    <div id="footer">
+        <p>&copy; 2012 TUTITUTUTU.RU. All rights reserved.</p>
+        <p class="footer-last">Designed by – <strong>NewIdols</strong></p>
+    </div> 
+    <!-- end footer -->
+</div>
+<!-- end wrap -->
+
+</body>
+</html>

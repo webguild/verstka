@@ -97,6 +97,7 @@ body {
     display: inline-block;
     zoom: 1;
     *display: inline;
+	vertical-align: baseline;
 }
 #search li > span{
     font-size: 12px;
@@ -112,6 +113,9 @@ body {
 }
 #search li .dropdown {
 	margin-right:10px;
+}
+#search .dropdown input {
+	width: 190px;
 }
 
 /* search direction */
@@ -560,6 +564,7 @@ body {
 			font-weight: normal;
 			color:#989898;
 			text-transform: uppercase;
+			white-space: nowrap;
 		}
 	.list dl {
 		background:#f5f5f6;
@@ -592,6 +597,7 @@ body {
 					color:#333;
 					float: left;
 				}
+				
 
 .fligth {
 	border-top:1px solid #e3e4e4;
@@ -658,18 +664,18 @@ body {
 				color: #44cdff;
 			}
 			
-	.fligth p.total {
-		background: #323e46;
-		text-align: right;
-		color: #fff;
-		font-size: 15px;
-		width: auto;
-		padding: 11px 20px;
-		
-	}
-		.fligth p.total strong {
-			font-size: 18px;
-		}
+p.total {
+	background: #323e46;
+	text-align: right;
+	color: #fff;
+	font-size: 15px;
+	width: auto;
+	padding: 11px 20px;
+	
+}
+p.total strong {
+	font-size: 18px;
+}
 
 /* Passengers details */
 .passengers {
@@ -813,6 +819,226 @@ body {
 .passengers dd.active.loading .recloc {
 	text-align: center;
 }
+
+/* Table */
+*+html #tables {
+	overflow: hidden;
+}
+
+#tables .search {
+	padding:5px 20px 14px;
+	line-height: 41px;
+	font-size:13px;
+	color:#333;
+}
+.search {
+	position: relative;
+}
+.search [name="city"] {
+	width: 191px;
+	margin-right: 6px;
+}
+.search .date {
+	margin:0 3px;
+}
+.search select {
+	margin: 0 19px 0 5px;
+	width: 242px;
+}
+.search input[type="checkbox"] + span {
+	margin-right:1px;
+}
+.search label {
+	margin-right:25px;
+}
+.search .button {
+	position: absolute;
+	bottom: 19px;
+	right: 26px;
+	min-width: 70px;
+}
+.flights .controls{
+	background: #fff;
+	padding: 31px 15px 11px;
+}
+.flights .controls .button {
+	text-transform: none;
+}
+u.delete {
+	display: inline-block;
+	height:13px;
+	width:10px;
+	background:url(../img/icons.png) -80px -55px;
+	vertical-align: text-top;
+	margin-right:5px;
+}
+.active u.delete {
+	background-position: -80px -25px
+}
+u.edit {
+	display: inline-block;
+	height:13px;
+	width:10px;
+	background:url(../img/icons.png) -60px -55px;
+	vertical-align: text-top;
+	margin-right:5px;
+}
+.active u.edit {
+	background-position: -60px -25px
+}
+u.checking {
+	display: inline-block;
+	height:15px;
+	width:15px;
+	background:url(../img/icons.png) -20px -50px;
+	vertical-align: text-top;
+	cursor: pointer;
+}
+.flights .check {width:35px;}
+.flights .when {width:175px;}
+.flights .from {width:175px;}
+.flights .to {width:185px;}
+.flights .price {width:160px; text-align: center;}
+.flights .per_km {width:150px;text-align: right; text-indent:0}
+
+.flights .head {
+	padding:0;
+	text-indent:20px;
+}
+.flights .head .filter {
+	color:#333;
+}
+.flights .head .active {
+	color:#008fc4;
+}
+.flights dl li {
+	text-indent:20px;
+}
+.flights dl li.check span {
+	margin-left:1px;
+}
+.flights dl li.price {
+	font-weight: bold;
+}
+.list .head li.per_km {
+	position: relative;
+	left:12px;
+}
+
+.flights .per_km a {
+	font-size:11px;
+	color:#008fc4;
+	margin-left:3px;
+	
+}
+.flights .per_km a:hover{
+	text-decoration: none;
+}
+u.filter {
+	height:3px;
+	width:5px;
+	background:url(../img/icons.png) -20px -70px;
+	vertical-align: baseline;
+	display: inline-block;
+	position: relative;
+	top:-2px;
+	margin-left:3px;
+}
+u.filter .up {
+	background-position: -26px -70px;
+}
+.active u.filter {
+	background-position: -26px -75px;
+}
+.active u.filter .up {
+	background-position: -26px -75px;
+}
+.flights dd:nth-child(even) {
+	background:#fff;
+}
+.flights dd li.colactive {
+	background:#d2e9f3;
+}
+.flights dd:nth-child(even) li.colactive {
+	background:#daf2fa;
+}
+.flights dd li.active, .flights dd:nth-child(even) li.active {
+	background:#aedbed;
+}
+.flights p.total {
+	padding-right:60px;
+}
+
+.flights.details{
+	padding-bottom:32px;
+}
+.flights.details .controls {
+	padding-top: 40px;
+}
+.flights.details li {
+	text-indent:8px;
+}
+
+.flights.details .check {text-indent:20px;}
+.flights.details .trip {width: 40px; padding-left:9px; }
+.details .date {width: 62px;}
+.details .from {width: 53px;}
+.details .to {width: 50px;}
+.details .time_from {width: 50px;}
+.details .time_to {width: 57px;}
+.details .interval {width: 74px;}
+.details .price {width: 74px;}
+.details .coef {width: 60px;}
+.details .pales {width: 55px;}
+.details .numb {width: 58px;}
+.details .totals {width: 85px;}
+.details .per_km {width: 114px;}
+.details .tarif {width: 45px;}
+
+
+.details .trip, 
+.details .time_from, 
+.details .time_to, 
+.details .per_km, 
+.details .interval {
+	text-align: center;
+	text-indent:0px;
+}
+
+.details .price, 
+.details .coef, 
+.details .numb, 
+.details .totals {
+	text-align: right;
+	text-indent:0px;
+}
+
+.details .trip, 
+.details .from, 
+.details .to, 
+.details .time_from, 
+.details .time_to, 
+.details .totals, 
+.details .price {
+	font-weight: bold;
+}
+
+.details .time_from, 
+.details .time_to {
+	color:#008fc4;
+}
+.details dd a {
+	color:#008fc4;
+}
+.details dd a:hover {
+	text-decoration: none;
+}
+.details .head .per_km {
+	text-indent:-15px
+}
+.details dd.active {
+	background:#daf2fa;
+}
 /* End Middle
 --------------------------------------------------------------------------------------------------------*/
 
@@ -853,6 +1079,11 @@ input[type="text"] {
 	height:28px;
 	border:1px solid #d5d5d5;
 	vertical-align: middle;
+	background:#fff;
+	color:#666;
+	font-size:16px;
+	line-height:28px;
+	padding:0 10px;
 }
 
 input[type="radio"] {
@@ -881,12 +1112,48 @@ input[type="radio"].checked + span{
     background-position: 0 -20px;
 }
 
+input[type="checkbox"] {
+    opacity:0;
+    margin: 0;
+    padding: 0;
+	vertical-align: middle;
+	position: absolute;
+}
+*+html input[type="checkbox"] {
+	filter:alpha(opacity=0);
+}
+input[type="checkbox"] + span {
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 -14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/icons.png) no-repeat 0 -50px;
+	position: relative;
+	top:-2px;
+}
+input[type="checkbox"]:checked + span{
+    background-position: 0 -65px;
+}
+input[type="checkbox"].checked + span{
+    background-position: 0 -65px;
+}
+
 input.date{
     width: 70px;
 	line-height:28px;
     font-size: 13px;
     padding: 0 13px 0 30px;
     background: #FFF url(../img/icons.png) no-repeat -75px 4px;
+}
+
+select {
+	border:1px solid #d5d5d5;
+	height:30px;
+	line-height:28px;
+	color:#666;
+	font-size:12px;
+	text-transform: uppercase;
 }
 
 /* Buttons (links) --------------------------------------------------*/
@@ -899,6 +1166,13 @@ input.date{
 	-o-box-shadow: 0 0 3px 2px #a6a7a8;
 	-moz-box-shadow: 0 0 3px 2px #a6a7a8;
 	-ms-box-shadow: 0 0 3px 2px #a6a7a8;
+}
+
+.block h1 {
+	font-size:12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 28px 20px 6px;
 }
 
 /* Button */
@@ -1096,31 +1370,28 @@ input.date{
 
 /* DropDown */
 .dropdown {    
-    width: 160px;
-    height: 28px;
-    line-height: 28px;
-    padding: 0 40px 0 10px;
-   
     color: #666;
     font-size: 16px;
-    overflow: hidden;
-    vertical-align: middle;
-    background: #FFF;
-    box-shadow: inset 1px 1px 3px #eeeeee;
-    -webkit-box-shadow: inset 1px 1px 3px #eeeeee;
-    -moz-box-shadow: inset 1px 1px 3px #eeeeee;
-    -o-box-shadow: inset 1px 1px 3px #eeeeee;
-    -ms-box-shadow: inset 1px 1px 3px #eeeeee;
-    border: 1px solid #d5d5d5;
-    position: relative;    
+   	position: relative;    
+}
+.dropdown input {
+	top:1px;
+	position: relative;
+}
+.dropdown i {
+	position: absolute;
+	left:10px;
+	font-style: normal;
+	top:1px;
 }
 .dropdown b{
     color: #333;
 }
+
 .dropdown span{
     position: absolute;
     right: 12px;
-    top: 0px;
+    top: 1px;
     font-size: 11px;
     padding-top: 1px;
     color: #999999;
