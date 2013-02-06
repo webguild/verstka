@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
-    <title>addvideo_from_me_2</title>
+    <title>admin_user_billing</title>
     <meta charset="utf-8" > 
     <link rel="stylesheet" href="css/styles.css" >
 </head>
 <body>
 	<!-- start mainarea -->
-	<div id="mainarea">
+	<div id="mainarea" class="hight">
     	<!-- start top_panel -->
         <div id="top_panel">
         	<div class="wrap">
@@ -61,72 +61,111 @@
                     </div>
                 </div>
                 <!-- end user_panel -->
+                <div class="clear"></div>
         	</div>
+            <div class="top_panel_bd"></div>
+            <div class="wrap">
+                <div class="tabs-type2 top_tabs">
+                    <a href="#">города</a>
+                    <a href="#">Модераторы</a>
+                    <a href="#">баннеры</a>
+                    <a href="#">правила</a>
+                    <a href="#">рейтинг</a>
+                    <a href="#">рассылка</a>
+                    <a href="#">блокировка</a>
+                    <a href="#" class="active">биллинг</a>
+                    <a href="#">Спамеры</a>
+                    <a href="#">активисты</a>
+                    <a href="#">Стоп-слова</a>
+                    <a href="#">конфигурация</a>
+                </div>
+            </div>
         </div>
         <!-- end top_panel -->
         
 		<!-- start middle -->
 		<div id="middle">
-        	<h1 class="wrap">Добавить видео</h1>
         	<!-- start content -->
             <div id="content">
                 <div class="wrap">
                     <!-- start adding_video -->
                     <div class="adding_video">
-                        <div class="tabs-type2 wide">
-                            <a href="#" class="active">с компьютера</a>
-                            <a href="#">с других ресурсов</a>
-                            
-                            <div class="clear"></div>
+                        <h2 class="big_title big_title_ind">Биллинг</h2>
+
+                        <div class="tabs-type2 small_tabs">
+                            <a href="#">Все операции</a>
+                            <a href="#" class="active">Ввели</a>
+                            <a href="#">Потратили</a>
+                            <a href="#">Закинуто админом</a>
+                            <a href="#">Снято админом</a>
+                            <a href="#">Потрачено на PRO</a>
+                            <a href="#">Размещение на главной</a>
+                            <a href="#">У пользователей на руках</a>
                         </div>
-                        
-                        <ul class="tabs-list">
-                            <li class="pc">
-                                <form action="#">
-                                    <div>
-                                        <div class="info_text">Сейчас вы можете загрузить 5 роликов, в дальнейшем — по одному ролику в неделю. <a href="#">Перейти на PRO-аккаунт.</a></div>
 
-                                        <ul class="video_load">
-                                            <li>
-                                                <div class="decor_box">The Private Life of Tarra White.avi <a href="#" class="vid_close"></a></div>
-                                                <div class="vid_status">Готов к загрузке</div>
-                                            </li>
-                                            <li>
-                                                <div class="decor_box">The Private Life of Tarra White.avi <a href="#" class="vid_close"></a></div>
-                                                <div class="vid_status">Готов к загрузке</div>
-                                            </li>
-                                            <li>
-                                                <div class="decor_box">The Private Life of Tarra White.avi <a href="#" class="vid_close"></a></div>
-                                                <div class="vid_status">Готов к загрузке</div>
-                                            </li>
-                                            <li>
-                                                <div class="decor_box">The Private Life of Tarra White.avi <a href="#" class="vid_close"></a></div>
-                                                <div class="vid_status">Готов к загрузке</div>
-                                            </li>
-                                            <li class="none">
-                                                <div class="decor_box">The Private Life of Tarra White.avi</div>
-                                                <div class="vid_status">Не может быть загружен</div>
-                                            </li>
-                                            <li class="none">
-                                                <div class="decor_box">The Private Life of Tarra White.avi</div>
-                                                <div class="vid_status">Не может быть загружен</div>
-                                            </li>
-                                            <li class="none">
-                                                <div class="decor_box">The Private Life of Tarra White.avi</div>
-                                                <div class="vid_status">Не может быть загружен</div>
-                                            </li>
-                                        </ul>
+                        <!-- .date_form -->
+                        <form action="#" class="date_form">
+                            <div>
+                                <div class="date_text">Просмотр данных</div>
+                                <select>
+                                    <option>За определенный период</option>
+                                </select>
+                                <span class="date">С 12 мая 2012 <img src="ico/calendar.png" alt="" /></span>
+                                <span class="date">Дата окончания <img src="ico/calendar.png" alt="" /></span>
+                                <div class="clear"></div>
+                            </div>
+                        </form>
+                        <!-- /.date_form -->
 
-                                        <a href="#" class="add_file">Добавить еще файлы</a>
-
-                                        <br />
-
-                                        <a href="#" class="submit_btn">Загрузить файлы</a></div>
-                                </form>
+                        <!-- .money_table -->
+                        <ul class="money_list">
+                            <li>
+                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
+                                <div class="price"><b>9 000</b> руб.</div>
+                                <div class="type">Яндекс. Деньги</div>
+                                <div class="day">1 мая 2012</div>
+                                <div class="time">14:45</div>
                             </li>
-                            <li class="othr hidden">
+                            <li>
+                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
+                                <div class="price"><b>9 000</b> руб.</div>
+                                <div class="type">Яндекс. Деньги</div>
+                                <div class="day">1 мая 2012</div>
+                                <div class="time">14:45</div>
+                            </li>
+                            <li>
+                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
+                                <div class="price"><b>9 000</b> руб.</div>
+                                <div class="type">Яндекс. Деньги</div>
+                                <div class="day">1 мая 2012</div>
+                                <div class="time">14:45</div>
+                            </li>
+                            <li>
+                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
+                                <div class="price"><b>9 000</b> руб.</div>
+                                <div class="type">Яндекс. Деньги</div>
+                                <div class="day">1 мая 2012</div>
+                                <div class="time">14:45</div>
+                            </li>
+                            <li>
+                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
+                                <div class="price"><b>9 000</b> руб.</div>
+                                <div class="type">Яндекс. Деньги</div>
+                                <div class="day">1 мая 2012</div>
+                                <div class="time">14:45</div>
+                            </li>
+                            <li>
+                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
+                                <div class="price"><b>9 000</b> руб.</div>
+                                <div class="type">Яндекс. Деньги</div>
+                                <div class="day">1 мая 2012</div>
+                                <div class="time">14:45</div>
                             </li>
                         </ul>
+                        <!-- /.money_table -->
+
+                        <div class="schedule"><img src="uploads/schedule.jpg" alt="" /></div>
+
                     </div>
                     <!-- end adding_video -->
                 </div>
