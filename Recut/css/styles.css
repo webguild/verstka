@@ -110,7 +110,7 @@ body {
 }
 
 #top_panel #logo {
-	margin:16px 0 0 -6px;
+	margin:16px 0 0 0;
 	float:left;	
 }
 
@@ -1248,6 +1248,189 @@ body {
 
 /*end page addvideo_from_me_3*/
 
+
+/* start profile */
+#profile {
+	background:#fff;
+	margin-top:-10px;
+	padding:20px 10px 0 10px;
+	position:relative;
+}
+
+#profile .avatar {
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	float:left;
+	margin-right:18px;
+}
+
+#profile .usr_panel {
+	float:left;
+	width:800px;
+}
+
+#profile .usr_panel h2 {
+	font-size:30px;
+	font-weight:normal;
+	color:#2a333b;
+	line-height:30px;
+}
+
+#profile .usr_panel h2 .pro {
+	font-size:11px;
+	color:#ea3862;
+	text-transform:uppercase;
+	font-family:'DINPro-Bold';
+	position:relative;
+	top:-13px;
+	left:0;
+}
+
+#profile .tabs-type2 {
+	margin-top:27px;	
+}
+
+#profile .tabs-type1 {
+	margin-top:18px;	
+}
+
+#profile #add_video_link {
+	display:block;
+	font-family:'DINPro-Medium';
+	text-transform:uppercase;
+	font-size:12px;
+	color:#fff;
+	height:28px;
+	line-height:28px;
+	padding:0 9px;
+	background:#2a333a;
+	text-decoration:none;
+	position:absolute;
+	top:19px;
+	right:10px;	
+}
+
+#profile .rating {
+	position:absolute;
+	top:65px;
+	right:10px;
+	font-size:36px;
+	font-family:'DINPro-Light';
+	color:#2a333a;
+	background:url(../ico/rating-big.png) left no-repeat;
+	padding-left:43px;	
+}
+
+#videograph {
+	overflow:hidden;
+	margin-top:20px;
+}
+
+#videograph ul {
+	overflow:hidden;
+	margin-right:-20px;	
+}
+
+#videograph ul li {
+	float:left;
+	width:290px;
+	height:172px;
+	background:#fff;
+	margin-right:20px;
+	margin-bottom:20px;
+	padding:10px 0 0 10px;
+}
+
+#videograph ul li:hover {
+	border:3px solid #ea3862;
+	width:287px;
+	height:169px;
+	padding:7px 0 0 7px;
+}
+
+#videograph ul li .ava {
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	float:left;
+	margin-right:9px;
+}
+
+#videograph ul li .info {
+	width:175px;
+	float:left;
+	position:relative;
+}
+
+#videograph ul li .info .pro {
+	text-transform:uppercase;
+	font-size:11px;
+	color:#ea3862;
+	line-height:11px;
+	font-family:'DINPro-Bold';	
+}
+
+#videograph ul li .info h3 {
+	font-weight:normal;
+	color:#2a333b;
+	font-size:18px;
+	line-height:20px;
+	margin-top:6px;
+}
+
+#videograph ul li .info .city {
+	font-size:12px;
+	line-height:12px;
+	color:#7e8992;
+	margin-top:5px;	
+}
+
+#videograph ul li .info .rating {
+	position:absolute;
+	top:79px;
+	left:0;
+	background:url(../ico/rating-small.png) left no-repeat;
+	height:20px;
+	font-size:20px;
+	color:#2a333a;
+	font-family:'DINPro-Light';
+	padding-left:29px;
+}
+
+#videograph ul li .remove {
+	display:inline-block;
+	margin-top:7px;
+	text-decoration:none;
+	color:#ea3862;
+	font-size:11px;	
+}
+
+#videograph ul li .remove img {
+	position:relative;
+	top:2px;
+	left:0;
+	margin-right:3px;
+}
+
+#videograph ul li .snd_msg {
+	display:none;
+	font-family:'DINPro-Medium';
+	text-transform:uppercase;
+	font-size:12px;
+	color:#fff;
+	height:28px;
+	line-height:28px;
+	padding:0 9px;
+	background:#2a333a;
+	text-decoration:none;
+	margin-top:7px;
+}
+
+#videograph ul li:hover .snd_msg {
+	display:inline-block;	
+}
+/* end profile */
 /* End Middle
 --------------------------------------------------------------------------------------------------------*/
 
@@ -1273,6 +1456,27 @@ body {
 .slider a.prev, .slider a.next {
 	position:absolute;
 	display:block;	
+}
+
+/* tabs-type1 */
+.tabs-type1 {
+		
+}
+
+.tabs-type1 a {
+	display:inline-block;
+	text-decoration:none;
+	font-size:12px;
+	color:#ea3862;
+	padding-bottom:14px;
+	border-bottom:3px solid transparent;
+	float:left;
+	margin-right:20px;	
+}
+
+.tabs-type1 a.active {
+	color:#2a333b;
+	border-color:#2a333b;	
 }
 
 
