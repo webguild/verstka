@@ -1439,7 +1439,102 @@ body {
 #videograph ul li:hover .snd_msg {
 	display:inline-block;	
 }
+
+#tubes {
+	margin-top:20px;
+	overflow:hidden;
+}
+
+#tubes ul {
+	overflow:hidden;
+	margin-right:-20px;
+}
+
+#tubes ul li {
+	width:300px;
+	height:202px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	background:#fff;
+}
+
+#tubes ul li:hover {
+	background:#2a333b;	
+}
+
+#tubes ul li a:first-child {
+	width:300px;
+	height:172px;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+}
+
+#tubes ul li a:first-child img {
+	width:300px;
+	height:172px;
+	position:absolute;
+	left:50%;
+	margin-left:-150px;	
+}
+
+#tubes ul li:hover a:first-child {
+	border:3px solid #ea3862;
+	width:294px;
+	height:166px;	
+}
+
+#tubes ul li h4 {
+	font-size: 12px;
+	color: #2a333a;
+	margin:7px 0 0 9px;
+}
+
+#tubes ul li .author, #tubes ul li .remove {
+	display:none;	
+}
+
+#tubes ul li:hover h4 {
+	display:none;	
+}
+
+#tubes ul li:hover .author {
+	display:block;	
+}
+
+#tubes ul li:hover .remove {
+	display:inline-block;	
+}
+
+#tubes ul li .author {
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	overflow:hidden;
+	margin:6px 0 0 5px;
+	float:left;
+}
+
+#tubes ul li .author img {
+	float:left;	
+}
+
+#tubes ul li .author span {
+	float:left;
+	margin-left:5px;
+}
+
+#tubes ul li .remove {
+	float:right;
+	text-decoration:none;
+	font-size:11px;
+	color:#ea3862;
+	margin:6px 10px 0 0;	
+}
 /* end profile */
+
 /*start page addvideo_from_other_1*/
 
 .info_text p:first-child{
