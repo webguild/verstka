@@ -2224,6 +2224,262 @@ div.vid_res{
 
 /*end page admin_user_city*/
 
+
+/* start system */
+.system {
+	background:#fff;
+	padding:25px 20px 20px 20px;	
+}
+
+.system #sidebar {
+	width:210px;
+	float:left;
+	margin-top:25px;
+}
+
+.system #cnt {
+	width:680px;
+	float:left;
+	margin-left:10px;	
+	margin-top:25px;
+}
+
+.system #sidebar a, .system #cnt a {
+	text-decoration:none;
+	color:#ea3862;
+	font-size:12px;	
+}
+
+.system #sidebar ul li {
+	margin-bottom:10px;	
+}
+
+.system #sidebar ul li.active a {
+	color:#2a333b;	
+}
+
+.system #cnt h1 {
+	font-size:18px;
+	font-weight:normal;
+	color:#2a333b;	
+}
+
+.system #cnt h2 {
+	font-size:14px;
+	color:#2a333b;	
+}
+
+.system #cnt p {
+	font-size:12px;
+	line-height:18px;
+	color:#2a333b;
+	margin:13px 0;
+	width:550px;
+}
+
+.system .help {
+	margin-top:25px;
+}
+
+.system .help ul li:first-child {
+	border-top:1px solid #f0f0f0;	
+}
+
+.system .help ul li {
+	border-bottom:1px solid #f0f0f0;
+	padding:7px 0 6px 10px;
+}
+
+.system .help ul li div {
+	display:none;
+	font-size:12px;
+	color:#2a333b;
+	line-height:18px;
+	width:600px;
+	margin:15px 0 15px 17px;	
+}
+
+.system .help ul li.active {
+	background:#f0f0f0;	
+}
+
+.system #cnt .help ul li.active a {
+	font-weight:bold;
+	color:#2a333b;	
+}
+
+.system .help ul li.active div {
+	display:block;
+}
+
+/* feedback */
+.feedback {
+	margin-top:25px;
+}
+
+.feedback h2 {
+	font-size:18px;
+	color:#2a333b;
+	font-weight:normal;	
+}
+
+.feedback > div {
+	background:#f0f0f0;
+	margin-top:15px;
+	padding:20px;	
+}
+
+.feedback label {
+	display:block;
+	font-size:12px;
+	color:#2a333b;
+	margin-bottom:10px;
+}
+
+.feedback label span {
+	display:inline-block;
+	float:left;
+	width:200px;
+	margin-top:3px;	
+}
+
+.feedback label input[type="text"] {
+	width:288px;	
+}
+
+.feedback label select {
+	width:300px;	
+}
+
+.feedback label textarea {
+	width:292px;
+	height:100px;
+}
+
+.feedback label.captcha {
+	margin-top:20px;	
+}
+
+.feedback label.captcha span {
+	margin-top:50px;	
+}
+
+.feedback label.captcha b {
+	display:block;
+	font-weight:normal;
+	float:left;
+	width:120px;	
+}
+
+.feedback label.captcha input {
+	margin-top:4px;
+	width:108px;	
+}
+
+.feedback .button {
+	margin:10px 0 0 200px;	
+}
+
+
+/* questions */
+.questions {
+	margin-top:25px;
+}
+
+.questions h2 {
+	font-size:18px;
+	color:#2a333b;
+	font-weight:normal;	
+}
+
+.questions h2 a {
+	display:inline-block;
+	text-decoration:none;
+	padding-right:14px;
+	color:#ea3862;
+	background:url(../ico/red-arrow-bottom.png) right no-repeat;	
+}
+
+.questions ul {
+	margin-top:25px;	
+}
+
+.questions ul .read {
+	display:inline-block;
+	color:#ea3862;
+	font-size:12px;
+	text-decoration:none;
+	margin-top:5px;	
+}
+
+.questions ul li {
+	padding:11px 0 17px 0;
+	border-top:1px solid #f0f0f0;
+	overflow:hidden;
+	position:relative;
+}
+
+.questions ul .ava {
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	float:left;
+	margin-right:10px;	
+}
+
+.questions ul .msg {
+	width:740px;
+	float:left;	
+}
+
+.questions ul li .answer {
+	position:relative;
+	background:#f0f0f0;
+	overflow:hidden;
+	width:860px;
+	padding:10px 0 15px 11px;
+	margin:16px 0 0 0;
+}
+
+.questions ul li .answer .msg_date {
+	right:30px;
+}
+
+.questions ul .msg h4 {
+	color:#2a333b;
+	font-size:12px;
+	margin-top:8px;
+}
+
+.questions ul .msg h4 .pro {
+	color:#ed145b;
+	font-size:8px;
+	text-transform:uppercase;
+	position:relative;
+	top:-10px;
+	left:0;
+}
+
+.questions ul .msg p {
+	color:#2a333b;
+	font-size:12px;
+	line-height:18px;
+	margin-top:7px;	
+}
+
+.questions ul .msg_date {
+	font-size:11px;
+	color:#7e8992;
+	position:absolute;
+	top:17px;
+	right:11px;
+}
+
+.questions ul .msg_date span {
+	display:inline-block;
+	margin-right:14px;	
+}
+/* end system */
 /* End Middle
 --------------------------------------------------------------------------------------------------------*/
 
@@ -2384,6 +2640,7 @@ textarea{
 	font-family: Arial;
 	padding: 3px;
 	font-size: 12px;
+	background:#fff;
 }
 
 .close_t{
