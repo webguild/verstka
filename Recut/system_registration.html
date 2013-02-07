@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
-    <title>system_pro</title>
+    <title>system_registration</title>
     <meta charset="utf-8" > 
     <link rel="stylesheet" href="css/styles.css" >
 </head>
@@ -67,51 +67,87 @@
         
 		<!-- start middle -->
 		<div id="middle">
-        	<h1 class="wrap">Pro-аккаунт</h1>
+        	<h1 class="wrap">Регистрация</h1>
         	<!-- start content -->
             <div id="content">
                 <div class="wrap">
-                    <!-- start pro_accaount -->
-                    <ul class="pro_account">
-                    	<li class="free">
-                        	<h3>Простой аккаунт</h3>
-                            <div class="price">Бесплатно</div>
-                            <div class="options">
-                            	<div>Загрузка <strong>5</strong> видео роликов</div>
-                                <div>Добавление в избранное</div>
+                    <!-- start system -->
+                    <div class="system">
+                        <div class="tabs-type2 wide">
+                            <a href="#" class="active">Для влюбленных романтиков</a>
+                            <a href="#">Для видеографов</a>
+                            
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <!-- start register -->
+                        <form class="register" action="#">
+                        	<div>
+                            	<label>
+                                	<span>Логин</span>
+                                    <input type="text" value="username" class="error" />
+                                    <i class="clear"></i>
+                                    <i class="hint">Такой логин уже используется</i>
+                                </label>
+                                
+                            	<label>
+                                	<span>Имя</span>
+                                    <input type="text" />
+                                    <i class="clear"></i>
+                                </label>
+                                
+                            	<label>
+                                	<span>Фамилия</span>
+                                    <input type="text" />
+                                    <i class="clear"></i>
+                                    <i class="hint">Обязательное поле</i>
+                                </label>
+                                
+                            	<label>
+                                	<span>E-mail</span>
+                                    <input type="text" value="username@mail.ru" />
+                                    <i class="clear"></i>
+                                </label>
+                                
+                            	<label>
+                                	<span>Пароль</span>
+                                    <input type="password" value="wfwefwefwef" />
+                                    <i class="clear"></i>
+                                </label>
+                                
+                            	<label class="captcha">
+                                	<span>Защитный код</span>
+                                    <b>
+                                    	<img src="uploads/captcha.jpg" alt="" />
+                                        <input type="text" />
+                                    </b>
+                                    <i class="clear"></i>
+                                </label>
+                                
+                            	<label class="agree">
+                                	<input type="checkbox" checked="checked" />
+                                	<span>Я согласен с <a href="#">условиями договора</a></span>
+                                    <i class="clear"></i>
+                                </label>
+                                
+                                <a href="#" class="button">Зарегистрироваться</a>
                             </div>
-                            <div class="shdw"></div>
-                        </li>
-                        <li class="good">
-                        	<h3>Продвинутый аккаунт</h3>
-                            <div class="price"><strong>600</strong> руб./год</div>
-                            <div class="options">
-                            	<div>Загрузка до <strong>10</strong> видео роликов</div>
-                                <div>Добавление в избранное</div>
-                                <div>Обмен сообщениями</div>
-                                <div>Удаление видео</div>
+                            
+                            <!-- start social_reg -->
+                            <div class="social_reg">
+                            	Вы можете зарегистрироваться, используя аккаунты других сервисов:
+                                
+                                <div>
+                                	<a href="#"><img src="img/fb.png" alt="" /></a>
+                                	<a href="#"><img src="img/tw.png" alt="" /></a>
+                                	<a href="#"><img src="img/vk.png" alt="" /></a>
+                                </div>
                             </div>
-                            <div class="link">
-                            	<a href="#" class="button">Купить аккаунт</a>
-                            </div>
-                            <div class="shdw"></div>
-                        </li>
-                        <li class="pro">
-                        	<h3>Pro-аккаунт</h3>
-                            <div class="price"><strong>1200</strong> руб./год</div>
-                            <div class="options">
-                            	<div><b>Неограниченное</b> количество роликов</div>
-                                <div>Добавление в избранное</div>
-                                <div>Обмен сообщениями</div>
-                                <div>Удаление видео</div>
-                            </div>
-                            <div class="link">
-                            	<a href="#" class="button">Купить аккаунт</a>
-                            </div>
-                            <div class="shdw"></div>
-                        </li>
-                    </ul>
-                    <!-- end pro_account -->
+                            <!-- end social_reg -->
+                        </form>
+                        <!-- end register -->
+                    </div>
+                    <!-- end system -->
                 </div>
             </div>
             <!-- end content -->
