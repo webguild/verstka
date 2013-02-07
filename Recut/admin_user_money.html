@@ -73,7 +73,7 @@
                     <a href="#">рейтинг</a>
                     <a href="#">рассылка</a>
                     <a href="#">блокировка</a>
-                    <a href="#" class="active">биллинг</a>
+                    <a href="#">биллинг</a>
                     <a href="#">Спамеры</a>
                     <a href="#">активисты</a>
                     <a href="#">Стоп-слова</a>
@@ -88,87 +88,84 @@
         	<!-- start content -->
             <div id="content">
                 <div class="wrap">
-                    <!-- start adding_video -->
-                    <div class="adding_video">
-                        <h2 class="big_title big_title_ind">Биллинг</h2>
 
-                        <div class="tabs-type2 small_tabs">
-                            <a href="#">Все операции</a>
-                            <a href="#" class="active">Ввели</a>
-                            <a href="#">Потратили</a>
-                            <a href="#">Закинуто админом</a>
-                            <a href="#">Снято админом</a>
-                            <a href="#">Потрачено на PRO</a>
-                            <a href="#">Размещение на главной</a>
-                            <a href="#">У пользователей на руках</a>
+                    <!-- start profile -->
+                    <div id="profile" class="no_ind">
+                        <div class="avatar">
+                            <img src="uploads/profile-ava.jpg" alt="" />
+                        </div>
+                        <div class="usr_panel">
+                            <h2>Дмитрий Иванов <span class="pro">pro</span></h2>
+                            <div class="place">Москва (Россия)</div>
+                            
+                            <div class="rating">345</div>
+                        </div>
+                        
+                        <div class="clear"></div>
+                    </div>
+                    <!-- end profile -->
+                </div>
+
+                <!-- .blu_box -->
+                <div class="blu_box">
+                    <div class="wrap">
+
+                        <ul class="us_nav">
+                            <li><a href="#">общая информация</a><span class="decor"></span></li>
+                            <li class="active"><a href="#">Личный счет</a><span class="decor"></span></li>
+                            <li><a href="#">Статистика</a><span class="decor"></span></li>
+                        </ul>
+
+                        <div class="link_list fl_all lnk_lst_user">
+                            <a class="submit_btn" href="#">Активировать аккаунт</a>
+                            <a class="submit_btn" href="#">Модерация</a>
+                            <a class="submit_btn" href="#">блокировать</a>
+                            <a class="submit_btn wide del" href="#">Удалить профиль</a>
+                            <div class="clear"></div>
                         </div>
 
-                        <!-- .date_form -->
-                        <form action="#" class="date_form">
-                            <div>
-                                <div class="date_text">Просмотр данных</div>
-                                <select>
-                                    <option>За определенный период</option>
-                                </select>
-                                <span class="date">С 12 мая 2012 <img src="ico/calendar.png" alt="" /></span>
-                                <span class="date">Дата окончания <img src="ico/calendar.png" alt="" /></span>
-                                <div class="clear"></div>
-                            </div>
-                        </form>
-                        <!-- /.date_form -->
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- /.blu_box -->
+
+                <div class="wrap">
+                    
+
+                    <!-- start adding_video -->
+                    <div class="adding_video">
+
+                        <h3 class="small_title small_title_ind">История операций:</h3>
 
                         <!-- .money_table -->
-                        <ul class="money_list">
+                        <ul class="money_list money_list_hisory">
                             <li>
-                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
                                 <div class="price"><b>9 000</b> руб.</div>
-                                <div class="type">Яндекс. Деньги</div>
+                                <div class="type">оплата года участия в MyWed Pro</div>
                                 <div class="day">1 мая 2012</div>
                                 <div class="time">14:45</div>
                             </li>
                             <li>
-                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
                                 <div class="price"><b>9 000</b> руб.</div>
-                                <div class="type">Яндекс. Деньги</div>
+                                <div class="type">оплата года участия в MyWed Pro</div>
                                 <div class="day">1 мая 2012</div>
                                 <div class="time">14:45</div>
                             </li>
                             <li>
-                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
                                 <div class="price"><b>9 000</b> руб.</div>
-                                <div class="type">Яндекс. Деньги</div>
-                                <div class="day">1 мая 2012</div>
-                                <div class="time">14:45</div>
-                            </li>
-                            <li>
-                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
-                                <div class="price"><b>9 000</b> руб.</div>
-                                <div class="type">Яндекс. Деньги</div>
-                                <div class="day">1 мая 2012</div>
-                                <div class="time">14:45</div>
-                            </li>
-                            <li>
-                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
-                                <div class="price"><b>9 000</b> руб.</div>
-                                <div class="type">Яндекс. Деньги</div>
-                                <div class="day">1 мая 2012</div>
-                                <div class="time">14:45</div>
-                            </li>
-                            <li>
-                                <div class="name">Иванов Иван <span>(Ivan_ivan)</span></div>
-                                <div class="price"><b>9 000</b> руб.</div>
-                                <div class="type">Яндекс. Деньги</div>
+                                <div class="type">оплата года участия в MyWed Pro</div>
                                 <div class="day">1 мая 2012</div>
                                 <div class="time">14:45</div>
                             </li>
                         </ul>
                         <!-- /.money_table -->
 
-                        <div class="schedule"><img src="uploads/schedule.jpg" alt="" /></div>
+                        <a href="#" class="more">Показать еще</a>
 
                     </div>
                     <!-- end adding_video -->
                 </div>
+
             </div>
             <!-- end content -->
 		</div>
