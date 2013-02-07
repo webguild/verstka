@@ -2629,6 +2629,53 @@ div.vid_res{
 	display:inline-block;
 	margin-right:14px;	
 }
+
+/* recovery_pass */
+.recovery_pass {
+	margin-top:30px;	
+}
+
+.recovery_pass label {
+	display:block;
+	font-size:12px;
+	color:#2a333b;
+	margin-bottom:10px;
+}
+
+.recovery_pass label span {
+	display:inline-block;
+	float:left;
+	width:200px;
+	margin-top:3px;	
+}
+
+.recovery_pass label input[type="text"] {
+	width:288px;	
+}
+
+.recovery_pass label.captcha {
+	margin-top:20px;	
+}
+
+.recovery_pass label.captcha span {
+	margin-top:50px;	
+}
+
+.recovery_pass label.captcha b {
+	display:block;
+	font-weight:normal;
+	float:left;
+	width:120px;	
+}
+
+.recovery_pass label.captcha input {
+	margin-top:4px;
+	width:108px;	
+}
+
+.recovery_pass .button {
+	margin:10px 0 0 200px;	
+}
 /* end system */
 /* End Middle
 --------------------------------------------------------------------------------------------------------*/
