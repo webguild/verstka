@@ -1245,10 +1245,17 @@ body {
 	text-align: right;
 	width: 250px;
 }
-
-.submit_btn.close{
-	background: url(../img/img_sprite.png) no-repeat right 10px #ea3862;
+.submit_btn.wide{
 	padding: 0 28px 0 9px;
+	background-image: url(../img/img_sprite.png);
+	background-repeat: no-repeat;
+	background-color: #ea3862;
+}
+.submit_btn.close{
+	background-position: right 10px;
+}
+.submit_btn.del{
+	background-position: right -62px;
 }
 
 .video_settings .submit_btn.close{
@@ -1600,9 +1607,10 @@ div.vid_res{
 /*start page admin_user_city*/
 
 .city_list{
-	margin: 25px 0 0;
+	margin: 25px 69px 0 0;
 	font-size: 12px;
 	width: 310px;
+	float: left;
 }
 .city_list dt{
 	margin-bottom: 6px;
@@ -1616,13 +1624,13 @@ div.vid_res{
 	font-weight: bold;
 	margin: 4px 0 0;
 }
-.city_list dt .submit_btn{
+.city_list dt > .submit_btn{
 	margin: 0 0 0 20px;
 }
 
 .city_list dd{
 	color: #7e8992;
-	padding: 5px 9px;
+	padding: 4px 9px 5px;
 	overflow: hidden;
 	margin-left: -9px;
 }
@@ -1634,7 +1642,7 @@ div.vid_res{
 	display: block;
 }
 
-.city_list dd a{
+.city_list .name_c a, .city_list .change, .link_list .cancel{
 	color: #ed145b;
 	text-decoration: none;
 }
@@ -1660,7 +1668,149 @@ div.vid_res{
 	display: none;
 }
 
+/*city_form*/
+.city_form{
+	background: #f0f0f0;
+	padding: 22px 20px 30px;
+	font-size: 12px;
+	color: #2a333b;
+	margin: 15px -9px 9px 0;
+	position: relative;
+}
+.city_form .name_field{
+	display: inline-block;
+	width: 90px;
+}
+.city_form > div{
+	margin-top: 11px;
+}
+.city_form > div:first-child{
+	margin-top: 0;
+}
+.city_form input[type="text"]{
+	width: 168px;
+}
+
+.city_form .link_list{
+	margin-top: 22px;
+}
+
+.city_form .clear{zoom: 1;}
+
+.city_form .city_form_decor{
+	margin: 0;
+}
+
+.city_form_decor{
+	position: absolute;
+	top: -12px;
+	left: 20px;
+	height: 12px;
+	width: 24px;
+	background: url(../img/img_sprite.png) no-repeat -113px 0;
+}
+
+.link_list .submit_btn{
+	margin: 0;
+}
+.link_list .submit_btn.wide{
+	margin-left: 10px;
+}
+.link_list .cancel{
+	float: right;
+	margin: 6px 0 0;
+}
+
 /*end page admin_user_city*/
+
+/*start page admin_user_city_2*/
+
+.city_list dd.choose .name_c a{
+	color: #2a333b;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+.city_form select{
+	width: 180px;
+}
+
+.city_form .country{
+	margin-bottom: 29px;
+}
+
+/*end page admin_user_city_2*/
+
+/*start page admin_user_moderators*/
+
+.mod_sbm{
+	margin-top: 24px;
+}
+
+/*mod_table*/
+.mod_table{
+	margin: 10px 0 0;
+}
+.mod_table td{
+	padding: 10px 0;
+	font-size: 12px;
+	color: #2a333b;
+	border-bottom: 1px solid #f0f0f0;
+	width: 297px;
+}
+.mod_table  td + td{
+	width: 125px;
+	text-align: center;
+}
+.mod_table  td + td + td{
+	width: 127px;
+}
+.mod_table  td + td + td + td{
+	width: 248px;
+}
+.mod_table  td + td + td + td + td{
+	width: 89px;
+	padding-left: 14px;
+}
+
+
+.mod_table thead td{
+	padding: 0 0 15px;
+}
+.mod_table tbody td{
+	vertical-align: middle;
+}
+
+.mod_box{
+	padding-top: 1px;
+	margin-top: -1px;
+}
+.mod_box .photo{
+	float: left;
+	margin-right: 10px;
+}
+.mod_box .photo img{
+	vertical-align: top;
+}
+.mod_box .text{
+	font-weight: bold;
+	margin: 7px 0 0;
+}
+.mod_box .stat{
+	position: relative;
+	top: -7px;
+	color: #ed145b;
+	margin: 0 0 0 8px;
+	font-size: 8px;
+}
+
+/*end page admin_user_moderators*/
+
+/*start page admin_user_money*/
+
+
+
+/*end page admin_user_money*/
 
 /* End Middle
 --------------------------------------------------------------------------------------------------------*/
@@ -1842,6 +1992,7 @@ label{
 
 .fl_l{float: left;}
 .fl_r{float: right;}
+.fl_all > *{float: left;}
 
 /* End Globals
 --------------------------------------------------------------------------------------------------------*/
