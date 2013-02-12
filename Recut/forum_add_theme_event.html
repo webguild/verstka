@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
-    <title>addvideo_from_me_0</title>
+    <title>forum_add_theme_event</title>
     <meta charset="utf-8" > 
     <link rel="stylesheet" href="css/styles.css" >
 </head>
@@ -35,6 +35,7 @@
                             <li class="decor"></li>
                         </ul>
                     </li>
+
                 </ul>
                 <!-- end language -->
                 
@@ -67,62 +68,121 @@
         
 		<!-- start middle -->
 		<div id="middle">
-        	<h1 class="wrap">Добавить видео</h1>
+        	<h1 class="wrap">Форум</h1>
+
         	<!-- start content -->
             <div id="content">
                 <div class="wrap">
                     <!-- start adding_video -->
                     <div class="adding_video">
-                        <div class="tabs-type2 wide">
-                            <a href="#" class="active">с компьютера</a>
-                            <a href="#">с других ресурсов</a>
+
+                        <div class="tabs-type2 forum_tabs">
+                            <a href="#">Все</a>
+                            <a href="#">Разговоры</a>
+                            <a href="#">Фотосессии</a>
+                            <a href="#">Новости</a>
+                            <a href="#">События</a>
+                            <a href="#" class="ind">Игнорирую</a>
+                            <a href="#">Слежу</a>
                             
                             <div class="clear"></div>
                         </div>
-                        
-                        <ul class="tabs-list">
-                            <li class="pc">
-                                <div class="nmbr_sbmt">
-                                    <h4>Чтобы загружать ролики вам нужно подтвердить номер телефона</h4>
-                                    <form class="number add_data" action="#">
+
+                        <h3 class="arial_title">Создание новой темы</h3>
+
+                        <form action="#">
+                            <div>
+
+                                <ul class="line_radio_list chk_label">
+                                    <li>
+                                        <label><input type="radio" name="rad_list" />Разговоры</label>
+                                        <div class="decor"></div>
+                                    </li>
+                                    <li>
+                                        <label><input type="radio" name="rad_list" />Новости</label>
+                                        <div class="decor"></div>
+                                    </li>
+                                    <li class="active">
+                                        <label><input type="radio" name="rad_list" />События</label>
+                                        <div class="decor"></div>
+                                    </li>
+                                </ul>
+
+                                <div class="show_style theme_form">
+
+                                    <div class="line_form">
                                         <div>
-                                            <span class="ur_nmb">Введите номер:</span>
-                                            <span class="data_plus">+</span>
-                                            
-
-                                            <!-- data -->
-                                            <span class="data">
-                                            	
-                                                <span>
-                                                    <span class="name">Код страны</span>
-                                                    <input type="text" />
-                                                </span>
-                                                <span>
-                                                    <span class="name">Код города</span>
-                                                    <input type="text" />
-                                                </span>
-                                                <span class="error_inp">
-                                                    <span class="name">Номер телефона</span>
-                                                    <input type="text" class="phone_inp" />
-                                                </span>
-
-                                            </span>
-                                            <!-- data -->
-
-                                            <br />
-                                            <a class="reset res_ind" href="#">Вы не ввели номер телефона</a>
-                                            <br />
-                                            <a href="#" class="submit">Подтвердить номер</a>
+                                            <div class="name_field">Название темы</div>
+                                            <input type="text">
                                         </div>
-                                    </form>
+                                        <div class="fl_all place_box">
+                                            <div>
+                                                <div class="name_field">Город</div>
+                                                <input type="text">
+                                            </div>
+                                            <div>
+                                                <div class="name_field">Место проведения</div>
+                                                <input type="text">
+                                            </div>
+                                            <div>
+                                                <div class="name_field">Тип события</div>
+                                                <select>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="fl_all place_box">
+                                            <div class="date_box">
+                                                <div class="name_field">Дата</div>
+                                                <span class="date m_0">Дата начала события <img src="ico/calendar.png" alt="" /></span>
+                                                <span class="date">Дата окончания события <img src="ico/calendar.png" alt="" /></span>
+                                            </div>
+                                            <div class="time_box fl_all">
+                                                <div class="name_field">Время</div>
+                                                <select>
+                                                    <option></option>
+                                                </select>
+                                                <b>:</b>
+                                                <select>
+                                                    <option></option>
+                                                </select>
+                                                <div class="clear"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="hr wh_hr">
+
+                                    <div class="tarea_box">
+                                        <div class="name_field">Ваще сообщение</div>
+                                        <textarea></textarea>
+                                    </div>
+
+                                    <ul class="add_list">
+                                        <li class="video">Вставить видео с <a href="#">Youtube, Vimeo </a> или <a href="#">из своего профиля</a></li>
+                                        <li class="photo"><a href="#">Прикрепить фотографии</a></li>
+                                    </ul>
+
                                 </div>
-                            </li>
-                            <li class="othr">
-                            </li>
-                        </ul>
+
+                                <label class="vid_label chk_label">
+                                    <input type="checkbox">Тема будет видна только видеографам
+                                    <img src="ico/video.png" alt="">
+                                </label>
+
+                                <br />
+
+                                <a class="submit_btn" href="#">Создать тему</a>
+
+                            </div>
+                        </form>
+
                     </div>
                     <!-- end adding_video -->
                 </div>
+
             </div>
             <!-- end content -->
 		</div>
