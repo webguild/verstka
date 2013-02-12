@@ -2009,6 +2009,34 @@ body {
 	color:#fff;
 	margin:15px 0 0 0;	
 }
+
+/* portfolio */
+.acc_hint {
+	font-size:12px;
+	line-height:18px;
+	color:#2a333b;
+	margin:20px 0;
+}
+
+.acc_hint a {
+	color:#ea3862;
+	text-decoration:none;	
+}
+
+.acc_hint a.button {
+	color:#fff;
+	margin-bottom:4px;	
+}
+
+.portfolio {
+	margin-top:20px;
+}
+
+.portfolio .txt_hint {
+	font-size:12px;
+	color:#2a333b;
+	line-height:18px;	
+}
 /* end profile */
 
 /*start page addvideo_from_other_1*/
@@ -3168,10 +3196,23 @@ div.vid_res{
 	background: url(../img/img_sprite.png) no-repeat -1480px -68px;
 }
 
+.bat_link {
+	float: left;
+	display: none;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	color: #fff;
+	margin: 8px 0 0 11px;
+	background:url(../ico/bat-ico.png) left no-repeat;
+	
+}
+
 #tubes.biger > ul > li:hover .tub_box{
 	display: none;
 }
-#tubes.biger > ul > li:hover .red_link, #tubes.biger > ul > li:hover .del_link{
+#tubes.biger > ul > li:hover .red_link, #tubes.biger > ul > li:hover .del_link, #tubes.biger > ul > li:hover .bat_link{
 	display: block;
 }
 
@@ -3194,6 +3235,22 @@ div.vid_res{
 #tubes ul .big_item:hover a:first-child{
 	width: 614px;
 	height: 349px;
+}
+
+#tubes a .main_video {
+	display:block;
+	position:absolute;
+	top:1px;
+	left:0;
+	height:28px;
+	line-height:28px;
+	text-transform:uppercase;
+	padding:0 9px;
+	background:#ea3862;
+	font-family:'DINPro-Medium';
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
 }
 
 #tubes .big_item .name{
