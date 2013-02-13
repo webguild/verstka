@@ -3,7 +3,13 @@
 <head>
     <title>admin_user_billing</title>
     <meta charset="utf-8" > 
-    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.min.css" />
+    <link rel="stylesheet" href="css/jquery.selectbox.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<!-- start mainarea -->
@@ -110,8 +116,8 @@
                                 <select>
                                     <option>За определенный период</option>
                                 </select>
-                                <span class="date">С 12 мая 2012 <img src="ico/calendar.png" alt="" /></span>
-                                <span class="date">Дата окончания <img src="ico/calendar.png" alt="" /></span>
+                                <input type="text" class="date" value="Дата начала события">
+                                <input type="text" class="date" value="Дата окончания события">
                                 <div class="clear"></div>
                             </div>
                         </form>

@@ -96,6 +96,17 @@ body {
 				font-style: normal;
 }
 
+/* @font-face {
+				font-family: 'DINPro-Light';
+				src: url('dinprolight.eot');
+				src: url('dinprolight.eot?#iefix') format('embedded-opentype'),
+						 url('dinprolight.woff') format('woff'),
+						 url('dinprolight.ttf') format('truetype'),
+						 url('dinprolight.svg#dinprolight') format('svg');
+				font-weight: normal;
+				font-style: normal;
+		} */
+
 /* End Fonts
 --------------------------------------------------------------------------------------------------------*/
 
@@ -716,7 +727,7 @@ body {
 }
 
 #battle_today ul li a {
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 #battle_today ul li a img {
@@ -724,14 +735,14 @@ body {
 }
 
 #battle_today ul li a img:first-child {
-	float:none;
+	float:left;
 }
 
 #battle_today ul li a .vs {
 	width:122px;
 	height:383px;
 	position:absolute;
-	bottom:-26px;
+	bottom:-30px;
 	left:418px;
 	background:url(../img/vs.png) no-repeat;
 }
@@ -797,7 +808,7 @@ body {
 	margin-left:0;	
 }
 
-.short_news .list .date {
+.short_news .list .dates {
 	font-size:11px;
 	color:#7e8992;	
 }
@@ -1131,9 +1142,10 @@ body {
 
 /*vid_radio*/
 .vid_radio{
-	margin: 27px 0 0 0;
+	padding: 27px 0 0 0;
 	font-size: 12px;
 	overflow: hidden;
+
 }
 .vid_radio li{
 	margin-right: 36px;
@@ -1142,7 +1154,6 @@ body {
 .vid_radio input[type="radio"]{
 	top: 1px;
 }
-
 
 .video_tab{
 	margin: 18px 0 0;
@@ -1298,6 +1309,11 @@ body {
 	margin-top:-10px;
 	padding:20px 10px 0 10px;
 	position:relative;
+	zoom: 1;
+}
+
+#profile .tabs-type1{
+	*margin-bottom: -38px;
 }
 
 #profile .avatar {
@@ -2006,7 +2022,7 @@ body {
 	margin-bottom:16px;	
 }
 
-.payment .order form select {
+.payment .order form select + .sbHolder {
 	width:120px;
 	float:left;
 	margin-right:19px;
@@ -2135,19 +2151,29 @@ div.vid_res{
 .date_form .date_text{
 	margin: 5px 0 0;
 }
-.date_form select{
+.date_form select + .sbHolder{
 	margin: 0 -5px 0 8px;
 	width: 205px;
 }
 
-.date{
+input[type="text"].date{
 	margin: 0px 0 0 21px;
 	color: #ea3862;
+
+	background: transparent;
+	border: 0;
+	width: auto !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding-left: 0;
+	padding-right: 0;
 }
-.date img{
+.date + img{
 	margin: 0 0 0 4px;
 	position: relative;
 	top: 2px;
+	*top: 0;
 }
 
 /*money_list*/
@@ -2228,6 +2254,7 @@ div.vid_res{
 	overflow: hidden;
 	margin-left: -9px;
 }
+.city_list > *{zoom: 1;}
 
 .city_list dd:hover{
 	background: #f0f0f0;
@@ -2329,12 +2356,16 @@ div.vid_res{
 	border-bottom: none;
 }
 
-.city_form select{
-	width: 180px;
+.city_form select + .sbHolder{
+	width: 177px;
 }
 
 .city_form .country{
 	margin-bottom: 29px;
+}
+.city_form .country > *{float: left;}
+.city_form .country .name_field{
+	margin-top: 2px;
 }
 
 /*end page admin_user_city_2*/
@@ -2529,8 +2560,8 @@ div.vid_res{
 	width:288px;	
 }
 
-.feedback label select {
-	width:300px;	
+.feedback label select + .sbHolder {
+	width:298px;	
 }
 
 .feedback label textarea {
@@ -3149,7 +3180,7 @@ div.vid_res{
 	width: 215px;
 	margin: 6px 0 0 9px;
 }
-#tubes .date{
+#tubes .dates{
 	float: right;
 	font-size: 11px;
 	color: #7e8992;
@@ -3529,7 +3560,7 @@ div.vid_res{
 	text-decoration: none;
 	color: #ea3862;
 }
-.comment_list .date{
+.comment_list .dates{
 	color: #7e8993;
 	margin: 0 0 0 5px;
 }
@@ -3653,7 +3684,7 @@ div.vid_res{
 .del_video{
 	margin: 18px 0 0;
 }
-.del_video select{
+.del_video select + .sbHolder{
 	width: 302px;
 }
 .del_video textarea{
@@ -3778,7 +3809,7 @@ div.vid_res{
 	margin-top: 0;
 }
 
-.vs_list .date{
+.vs_list .dates{
 	text-align: center;
 	color: #7e8992;
 }
@@ -3909,7 +3940,19 @@ div.vid_res{
 
 .line_form > div{
 	margin-top: 18px;
+	*position: relative;
+	*z-index: 10;
 }
+.line_form > div + div{*z-index: 9;}
+.line_form > div + div + div{*z-index: 8;}
+.line_form > div + div + div + div{*z-index: 7;}
+.line_form > div + div + div + div + div{*z-index: 6;}
+.line_form > div + div + div + div + div + div{*z-index: 5;}
+.line_form > div + div + div + div + div + div + div{*z-index: 4;}
+.line_form > div + div + div + div + div + div + div + div{*z-index: 3;}
+.line_form > div + div + div + div + div + div + div + div + div{*z-index: 2;}
+.line_form > div + div + div + div + div + div + div + div + div + div{*z-index: 1;}
+
 .line_form > div:first-child{
 	margin-top: 0;
 }
@@ -3919,23 +3962,23 @@ div.vid_res{
 }
 
 .place_box > div{
-	margin-left: 20px;
+	padding-left: 20px;
 }
 .place_box > div:first-child{
-	margin-left: 0;
+	padding-left: 0;
 }
 .place_box input[type="text"]{
 	width: 192px;
 }
-.place_box select{
-	width: 204px;
+.place_box select + .sbHolder{
+	width: 200px;
 }
 
 .theme_form .date{
 	margin: 0 0 0 27px;
 }
 
-.theme_form .m_0{
+.m_0, input[type="text"].date.m_0{
 	margin: 0;
 }
 
@@ -3946,8 +3989,8 @@ div.vid_res{
 .time_box {
 	min-width: 200px;
 }
-.time_box select{
-	width: 62px;
+.time_box select + .sbHolder{
+	width: 57px;
 }
 .time_box b{
 	font-size: 14px;
@@ -4700,16 +4743,16 @@ div.vid_res{
 }
 
 
-input[type="text"], select, input[type="password"]{
+input[type="text"], .sbHolder, input[type="password"]{
 	font-size: 12px;
 	color: #2a333b;
 	height: 17px;
 	padding: 2px 5px;
 	background: #fff;
 }
-select{
+.sbHolder{
 	padding: 0;
-	height: 25px;
+	height: 21px;
 }
 input[type="text"].tags{
 	width: 145px;
@@ -4719,7 +4762,7 @@ input.error {
 	outline:2px solid #ea3862;	
 }
 
-input[type="text"], textarea, input[type="password"]{
+input[type="text"], textarea, input[type="password"], .sbHolder{
 	border-width: 1px;
 	border-style: solid;
 	border-color: #808080 #d4cfc9 #d4cfc9 #808080;
@@ -4977,6 +5020,94 @@ label{
 }
 
 /* End Popup
+--------------------------------------------------------------------------------------------------------*/
+
+/* Start UI
+--------------------------------------------------------------------------------------------------------*/
+
+/* calendar */
+#ui-datepicker-div{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: #2a333a;
+	border: 0;
+	font-size: 11px;
+	width: 237px;
+	padding-bottom: 16px;
+}
+#ui-datepicker-div .ui-datepicker-header{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: 0;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+	border: 0;
+	margin: 12px 0 0;
+	padding: 0;
+}
+#ui-datepicker-div .ui-datepicker-prev, #ui-datepicker-div .ui-datepicker-next{
+	height: 13px;
+	width: 14px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	cursor: pointer;
+	top: 3px;
+	background: url(../img/img_sprite.png) no-repeat -596px -67px;
+}
+#ui-datepicker-div .ui-datepicker-prev{
+	left: 53px;
+}
+#ui-datepicker-div .ui-datepicker-next{
+	background-position: -730px -67px;
+	right: 53px;
+}
+#ui-datepicker-div .ui-datepicker-prev.ui-state-hover, #ui-datepicker-div .ui-datepicker-next.ui-state-hover{
+	border: none;
+}
+
+.ui-datepicker table{
+	margin: 11px 0 0;
+}
+.ui-datepicker-calendar thead th{
+	text-transform: uppercase;
+	color: #d2d5d7;
+	padding: 0 0 5px 0;
+}
+.ui-datepicker-calendar tbody td{
+	padding: 1px 6px;
+}
+.ui-datepicker-calendar .ui-state-default{
+	font-size: 11px;
+	color: #fff;
+	background-color: transparent;
+	border-color: transparent;
+	padding: 2px 4px;
+}
+.ui-datepicker-calendar .ui-state-hover{
+	border: 1px solid transparent;
+	background: #ea3862;
+}
+
+.ui-datepicker-calendar .ui-state-active{border-color: #fff;}
+
+/* SelectBox */
+.sbSelector, .payment .order .sbSelector{
+	text-indent: 6px;
+	color: #000;
+	font-size: 12px;
+}
+.sbOptions{
+	top: 21px;
+}
+.sbToggle{
+	background-position: 13px -395px;
+}
+
+/* End UI
 --------------------------------------------------------------------------------------------------------*/
 
 /* =Tables
