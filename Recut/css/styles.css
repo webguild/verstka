@@ -1265,9 +1265,35 @@ body {
 .submit_btn.del{
 	background-position: right -62px;
 }
+.submit_btn.bat{
+	background:#2a333a url(../ico/bat-ico.png) 148px 6px no-repeat;
+}
 
 .video_settings .submit_btn.close{
 	margin-left: 0;
+}
+
+.video_settings .reset {
+	float:left;
+	color:#ea3862;
+	font-size:12px;
+	margin:36px 0 0 10px;
+	text-decoration:none;	
+}
+
+.video_settings .main_vid {
+	margin-top:10px;	
+}
+
+.video_settings .main_vid label {
+	font-size:12px;
+	color:#2a333b;
+}
+
+.video_settings .main_vid label input {
+	position:relative;
+	top:1px;
+	left:0;	
 }
 
 /*end page addvideo_from_me_3*/
@@ -4810,6 +4836,19 @@ label{
 }
 .video_popup > img{
 	vertical-align: middle;
+}
+
+
+/* video_edit */
+.video_edit {
+	width:760px;	
+}
+
+.v_title {
+	font-size:30px;
+	color:#2a333b;
+	font-weight:normal;
+	margin-bottom:20px;
 }
 
 /* End Popup
